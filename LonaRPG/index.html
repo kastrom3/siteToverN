@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<link rel="shortcut icon" href="../Images/Absolver/favicon.png" type="image/png">
+	<meta charset="UTF-8">
+	<title>LonaRPG</title>
+	<link rel="stylesheet" href="Lona.css">
+</head>
+<body>
+	<div id="menu">
+		<div id="con">
+			<div id="L">
+				<a id="i1" href="#main" onclick="playAudio(); this.style.padding='12px'; i2.style.padding='0px'; i3.style.padding='0px'; cur.style.top='-122px';" style="padding: 12px;">Основное</a><br>
+				<a id="i2" href="#mods" onclick="playAudio(); this.style.padding='12px'; i1.style.padding='0px'; i3.style.padding='0px'; cur.style.top='-79px';" style="padding: 0px;">Моды</a><br>
+				<a id="i3" href="#links" onclick="playAudio(); this.style.padding='12px';  i1.style.padding='0px'; i2.style.padding='0px'; cur.style.top='-39px';" style="padding: 0px;">Ссылки</a><br>
+				<img id="cur" src="cursor.png" style="top: -122px;">
+			</div>
+			<div id="R">
+				<div class="block" id="main" style="background-image: url(Lona1.png); background-size: 600px; background-repeat: no-repeat; background-position: 100% 100%;">
+					<h2>LonaRPG с ToverN Grup!</h2>
+					<p>Здесь вы сможете вы сможете  скачать все моды созданные мною.</p>
+				</div>
+				<div class="block" id="mods">
+					<iframe src="mods.html"></iframe>
+				</div>
+				<div class="block" id="links">
+					<iframe src="links.html"></iframe>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript">
+			function playAudio(){
+			   var myAudio = new Audio;
+			   myAudio.src = "Open1.ogg";
+			   myAudio.play();
+			}
+			window.onload = function() {
+			document.getElementById('i2').onmouseover=function() {
+				document.getElementById('main').style.cssText='background-image: url(Lona2.png); background-size: 600px; background-repeat: no-repeat; background-position: 100% 100%;';
+				}
+			document.getElementById('i2').onmouseout=function() {
+				document.getElementById('main').style.cssText='background-image: url(Lona1.png); background-size: 600px; background-repeat: no-repeat; background-position: 100% 100%;';
+				}
+			}
+		</script>
+	</div>
+</body>
+</html>

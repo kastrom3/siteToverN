@@ -1,0 +1,66 @@
+body {
+	background: url(Images/Absolver/background_brown.jpg);
+	background-position: center top;
+	background-size: 100%;
+	font-family: 'Rubik', sans-serif;
+	font-size: 15pt;
+	color:#f5f9cc;
+	margin: 0;
+}
+
+h2{
+	text-align:center;
+}
+
+a {
+    color: #f5f9cc;
+}
+
+select{
+	width: 18px;
+	background: #C6BFAD;
+	font-family: 'Rubik', sans-serif;
+	font-size: 15pt;
+	color:#f5f9cc;
+	display: inline;
+}
+
+#header { 
+	padding: 15px;
+	background:  url(Images/Absolver/background_beige.jpg);
+}
+
+#fon {
+	background-size: 100%;
+	background-position: center top;
+	background-attachment: fixed;
+}
+
+#con {
+	width: 100%;
+}
+
+#L{
+	width: 20%;
+	float: left;
+}
+
+#C{
+	margin: 0 20% 0 20%;
+}
+
+#R{
+	width: 20%;
+	float: right;
+}
+
+#footer { 
+	left: 0; bottom: 0;
+	width: 100%;
+	padding-bottom: 6px;
+	color:#f5f9cc;
+	background:  url(Images/Absolver/UI_RewardChallenge_BackgroundGlow.png);
+}
+
+.logo-bg-container{width:0; height:40px; background:#f62548; transition:all .5s ease}
+.logo-bg-container:hover{width:137px}

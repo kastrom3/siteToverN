@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;800&display=swap');
+
+@font-face {
+	font-family: "Noto Sans CJK TC Black"; 
+	src: url("NotoSansCJKtc-Black.otf") format("truetype"); 
+	} 
+
+body{
+	display: grid;
+	background-image: url(LonaMap.jpg);
+	background-size: cover;
+	background-position: 50%;
+	background-attachment: fixed;
+	image-rendering: pixelated;
+	font-family: 'Noto Sans CJK TC Black', sans-serif;
+	font-size: 18pt;
+	color: #fff;
+}
+
+h2{
+	font-size: 40pt;
+    margin-block-start: 0;
+}
+
+a{
+	color: #fff;
+	text-decoration-line: none;
+	font-size: 21pt;
+}
+
+iframe{
+	width: 100%;
+	height: 100%;
+	border: 0px
+}
+
+#menu{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-image: url(background.png);
+	background-size: 100% 100%;
+}
+
+#con{
+	padding: 5%;
+	height: 100%;
+}
+
+#R, #L {
+	min-height: 1px;
+	box-sizing: border-box;
+}
+
+#R{
+	height: 70%;
+}
+
+@media (min-width: 808px) {
+	#R, #L{
+		float: left;
+		height: 80%;
+	}
+	#R {
+		width: 80%;
+	}
+	#L {
+		width: 20%;
+		padding-left: 30px;
+	}
+}
+
+#R2, #L2 {
+	min-height: 1px;
+	box-sizing: border-box;
+	text-align: center;
+}
+
+@media (min-width: 1037px) {
+	#R2, #L2{
+		float: left;
+		width: 50%;
+	}
+}
+
+.block{
+    display: none;
+    height: -webkit-fill-available;
+	background-color: rgba(0,0,0,0.6);
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+.block:target{
+    display: block
+}
+
+#cur{
+	position: relative;
+	left: -49px;
+	width: 58px;
+	height: 37px;
+}
+
+#list a{
+	padding-right: 30px;
+}
+
+.mod{
+    display: none;
+}
+
+.mod:target{
+    display: block
+}
+
+#ui{
+	margin-block-end: 0;
+	color: #11eb00;
+}
+
+::-webkit-scrollbar {
+	width: 8px;
+	height: 8px;
+}
+
+::-webkit-scrollbar-track {
+	background: #666666; 
+}
+
+::-webkit-scrollbar-thumb {
+	background: #c4c4c4; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: #e6e6e6; 
+}
