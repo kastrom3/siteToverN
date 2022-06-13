@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="shortcut icon" href="../../resources/favicon.png" type="image/png">
+		<meta charset="utf-8">
+		<title>Ифна!</title>
+		<script>
+			if (matchMedia('(prefers-color-scheme: dark)').media === 'not all') {
+				document.documentElement.style.display = 'none';
+				document.head.insertAdjacentHTML(
+					'beforeend',
+					'<link rel="stylesheet" href="../styles/light.css" onload="document.documentElement.style.display=\'\'">'
+				);
+			}
+		</script>
+
+		<link rel="stylesheet" href="../styles/light.css" media="(prefers-color-scheme: light)">
+		<link rel="stylesheet" href="../styles/dark.css" media="(prefers-color-scheme: dark)">
+		<link rel="stylesheet" href="../styles/index.css">
+	</head>
+	<body style="text-align: center;">
+		<fieldset style="border: 0px;">
+		<input class="switcher__radio" type="radio" value="light">
+		<input class="switcher__radio" type="radio" value="auto">
+		<input class="switcher__radio" type="radio" value="dark">
+	</fieldset>
+		<script src="../index.js"></script>
+		<p><b>Возможны изменения в переводе, если вы можете помочь пишите <a href='https://vk.com/topic-163367612_46422409' target="_blank">сюда</a></b><br>
+		текст в <i>@Являетя плохо переведённым@</i>!</p>
+		<p><a href='index.html'><b>перейти к карте</b></a></p>
+		<p>Если у вас не видны изменения после обновления перевода попробуйте открыть во весь экран и нажать <b>Ctrl+F5</b>!</p>
+		<p>Созданно командой <a href='http://www.sloclap.com/en' target="_blank"><b>SloClap</b></a><br>
+		переведино <a href='https://www.toverngrup.tk/' target="_blank"><b>ToverN Grup</b></a></p>
+	</body>
+</html>
