@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<link rel="shortcut icon" href="../../../Images/Absolver/favicon.png" type="image/png">
+	<meta charset="UTF-8">
+	<title>Новости</title>
+	<script>
+		if (matchMedia('(prefers-color-scheme: dark)').media === 'not all') {
+			document.documentElement.style.display = 'none';
+			document.head.insertAdjacentHTML(
+				'beforeend',
+				'<link rel="stylesheet" href="../../styles/light.css" onload="document.documentElement.style.display=\'\'">'
+				);
+			}
+	</script>
+
+	<link rel="stylesheet" href="../../styles/light.css" media="(prefers-color-scheme: light)">
+	<link rel="stylesheet" href="../../styles/dark.css" media="(prefers-color-scheme: dark)">
+	<link rel="stylesheet" href="../../styles/index.css">
+</head>
+<body>
+	<div id="header">
+		<div class="col-L">
+			<a href="../"><img src="../../../../Images/Absolver/arrow_right.png" style="transform: rotateY(180deg);"></a>
+		</div>
+		<div class="col-R">	<fieldset class="switcher">
+				<input class="switcher__radio switcher__radio--light" type="radio" name="color-scheme" value="light" aria-label="Светлая">
+				<input class="switcher__radio switcher__radio--auto" type="radio" name="color-scheme" value="auto" aria-label="Системная" checked>
+				<input class="switcher__radio switcher__radio--dark" type="radio" name="color-scheme" value="dark" aria-label="Тёмная">
+				<div class="switcher__status"></div>
+			</fieldset>
+			<script src="../../index.js"></script>
+		</div>
+	</div>
+	<div id="con" style="padding-top: 74px; min-height: 0;"></div>
+	<iframe src="news.html" id="idIframe" onload="iframeLoaded()" style="width: 100%"></iframe>
+	<script type="text/javascript">
+		function iframeLoaded() {
+			var iFrameID = document.getElementById('idIframe');
+			if(iFrameID) {
+				iFrameID.height = "";
+				iFrameID.height = iFrameID.contentWindow.document.body.scrollHeight + "px";
+			}   
+		}
+	</script>   
+	<div id="footer">
+		<div class="col-L">
+			<div style="width: 137px; height: 40px;"><a href="https://sloclap.com/en" target="_blank"><div class="logo-bg-container"><img src="../../../../Images/icons/SloClap.svg" style="max-width: none;" width="137px" height="40px"></div></a></div>
+			<a href="http://absolver.com/" target="_blank"><img align="center" src="../../../../Images/Absolver/UI_Social_AbsolverSite.png" width="60px" height="60px"></a>
+			<a href="https://www.youtube.com/c/Sloclap" target="_blank"><img align="center" src="../../../../Images/Absolver/UI_Social_YouTube.png" width="60px" height="60px"></a>
+			<a href="https://www.reddit.com/r/absolver/new/" target="_blank"><img align="center" src="../../../../Images/Absolver/UI_Social_reddit.png" width="60px" height="60px"></a>
+			<a href="https://discord.com/invite/absolver" target="_blank"><img align="center" src="../../../../Images/Absolver/UI_Social_Discord.png" width="60px" height="60px"></a>
+		</div>
+		<div class="col-R">
+			<div style="height: 40px;"></div>
+			<a href="https://www.youtube.com/channel/UCr0yLxo4vCOanED6B0bpfow" target="_blank"><img align="center" src="../../../../Images/Absolver/UI_Social_YouTube.png" width="60px" height="60px"></a>
+			<a href="https://www.twitch.tv/kastrom_tovern" target="_blank"><img align="center" src="../../../../Images/Absolver/UI_Social_twitch.png" width="60px" height="60px"></a>
+			<a href="https://discord.com/invite/CfhvwUd7SA" target="_blank"><img align="center" src="../../../../Images/Absolver/UI_Social_Discord.png" width="60px" height="60px"></a>
+			<a href="https://imgur.com/user/Kastrom" target="_blank"><img align="center" src="../../../../Images/Absolver/UI_Social_imgur.png" width="60px" height="60px"></a>
+			<a href="https://vk.com/tovern" target="_blank"><img align="center" src="../../../../Images/Absolver/UI_Social_VK.png" width="60px" height="60px"></a>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<script>
+        if (matchMedia('(prefers-color-scheme: dark)').media === 'not all') {
+            document.documentElement.style.display = 'none';
+            document.head.insertAdjacentHTML(
+                'beforeend',
+                '<link rel="stylesheet" href="../styles/light.css" onload="document.documentElement.style.display=\'\'">'
+            );
+        }
+    </script>
+
+	<link rel="stylesheet" href="../../../SmartPhoto/css/smartphoto.min.css">
+    <link rel="stylesheet" href="../styles/dark.css" media="(prefers-color-scheme: light)">
+    <link rel="stylesheet" href="../styles/dark.css" media="(prefers-color-scheme: dark)">
+    <link rel="stylesheet" href="../styles/index.css">
+	<style>
+		body{background: none; color: #f5f9cc; } a{color: #f5f9cc;}
+	</style>
+</head>
+<body class="page">
+	<div class="Item"><a href="../../../Images/Absolver/works/Ilentia_SizeFull.png" class="js-img-viewer" data-group="1" data-caption="Арт Обломка"><img src="../../../Images/Absolver/works/Ilentia_Size.png" width="90%"></a></div>
+	<div class="Item">
+		<h3>The approximate dimensions of Ilentia.</h3>
+		<p align="left">It was based on rivers, since usually large rivers on the continents are on average 10-20 km wide, I took an average value of 15 km. The width of the rivers on the map was 3 pixels, from this we assume that 1 pixel ≈ 5 km. based on these data, we obtain these lengths.
+		<br>Parallels ≈ 16.110 km
+		<br>Meridians ≈ 12.625 km
+		<br>(This image is 4800 x 3000 dimensions)</p>
+	</div>
+	<img id="sprt" src="">
+	<div class="Item">
+		<h3>Location of Raslan, as well as approximate dimensions.</h3>
+		<p align="right">Width ≈ 165 km
+		<br>Length ≈ 255 km
+		<br>These dimensions are based on in-game models of the city, and it may be radically different from the "lore" city that has been depicted in some concept art.</p>
+	</div>
+	<div class="Item"><a href="../../../Images/Absolver/works/RaslanInMap.png" class="js-img-viewer" data-group="2" data-caption="Арт Обломка"><img src="../../../Images/Absolver/works/RaslanInMap.png" width="90%"></a></div>
+	<img id="sprt" src="">
+	<div class="Item"><a href="../../../Images/Absolver/works/climatic_zones.png" class="js-img-viewer" data-group="3" data-caption="Арт Обломка"><img src="../../../Images/Absolver/works/climatic_zones.png" width="90%"></a></div>
+	<div class="Item">
+		<h3>Ilentia's climatic zones.</h3>
+		This is an approximate distribution of climatic zones. I based on the climate of Raslan and the Sharnam Desert.
+		<ul align="left">
+			<li>If we give a convention that snow is a rarity in Raslan, then the subtropics will fully correspond to it.</li>
+			<li>It is also worth noting the abnormal shift of climatic zones to the north. I do not know how this is explained.
+			<br>–But this is definitely not related to the increased angle of the planet's axis!
+			<br>–Perhaps this is due to some peculiarity of the orbit. But here nothing is known at all!</li>
+			<li>Also at the expense of the Ice Plains of the Motherland, if we assume that cold winds blow from the south, this may explain their anomalous proximity to the desert. If anything, the Sharnam Desert does not cool because of the Uringa Mountains, which do not allow cold air to enter the desert.
+			<br>–This explains the anomalous proximity of the Tropics and the Temperate belt.</li>
+		</ul>
+	</div>
+	<script src="../../../SmartPhoto/js/smartphoto.js?v=1"></script>
+	<script>
+		document.addEventListener('DOMContentLoaded',function(){
+			const sm = new SmartPhoto(".js-img-viewer", {
+				showAnimation: false
+			});
+			// sm.destroy();
+		});
+		</script>
+   </body>
+  </html>

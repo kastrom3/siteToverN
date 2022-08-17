@@ -1,0 +1,24 @@
+* {
+	--image: url(../../../Images/Absolver/background_CosmicLatte.jpg);
+	--sprt: url(../../../Images/Absolver/Dlisting_separator.png);
+	--color:#000;
+	--color2:#73a4a4;
+	--ico: url(../../../Images/Absolver/list-style-L.png);
+	--Color: #f5f5f5;
+	--Color2: #fff;
+	--p: #444;
+	--h2: #0a0a0a;
+	--a: #666;
+}
+
+.switcher__radio {
+	filter: invert(0);
+}
+
+.switcher__radio:checked {
+	filter: invert(1);
+}
+
+.switcher__status {
+	filter: invert(0);
+}

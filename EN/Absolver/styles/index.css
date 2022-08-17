@@ -1,0 +1,427 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,600;0,800;1,400;1,600;1,800&display=swap');
+
+body{
+	background: #000;
+	background-image: var(--image);
+	background-position: center center;
+	background-size: 100%;
+	image-rendering: pixelated;
+	font-family: 'Rubik', sans-serif;
+	font-size: 15pt;
+	color: var(--color);
+	margin: 0;
+}
+
+h1{
+	text-align:center;
+	font-weight: 800;
+	font-size: 45px;
+}
+
+h2{
+	text-align:center;
+	font-weight: 800;
+	font-size: 30px;
+}
+
+a{
+	color: var(--color);
+}
+
+ul{
+	margin-top: 0;
+	list-style-image: var(--ico);
+}
+
+ol{
+	margin-top: 0;
+}
+
+ul ol{
+	list-style-image: none;
+}
+
+li{
+	margin-block-start: 0.3em;
+}
+
+li p{
+	margin-block-start: 0;
+	margin-block-end: 0.6em;
+}
+
+#long li{
+	margin-block-end: 1em;
+}
+
+#long li li{
+	margin-block-end: 0;
+}
+
+i{
+	color: var(--color2);
+}
+
+i a{
+	color: var(--color2);
+}
+
+iframe{
+	border: 0px;
+}
+
+details open{
+	text-align:center;
+}
+
+summary{
+	font-size: 21pt;
+}
+
+tr{
+	vertical-align: top;
+}
+
+#sprt{
+	background: var(--sprt);
+	background-size: 100%;
+	width: 100%;
+	height: 3px;
+	margin: 9px 0 9px 0;
+}
+
+#header{ 
+	position: fixed;
+	width: 100%;
+	padding: 15px 0 15px 0;
+	background:  url(../../../Images/Absolver/background_beige.jpg);
+	z-index: 4;
+}
+
+#fon{
+	height: 60vh;
+	width: 100%;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	top: 0;
+	table-layout: fixed;
+	overflow: hidden;
+	background-image: url();
+	background-size: cover;
+	background-position: 50% 50%;
+	background-attachment: fixed;
+	color: #f5f9cc;
+}
+
+#fonf{
+	height: 92vh;
+	width: 100%;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	top: 0;
+	table-layout: fixed;
+	overflow: hidden;
+	background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url();
+	background-size: cover;
+	background-position: 50% 50%;
+	background-attachment: fixed;
+	color: #f5f9cc;
+}
+
+#con{
+	width: 100%;
+	min-height: calc(100vh - 106px);
+}
+
+@media (max-width: 1200px){
+	#L{
+		float: left;
+		width: 1%;
+	}
+	#R{
+		float: right;
+		width: 1%;
+	}
+	#C{
+		margin: 0 1% 0 1%;
+	}
+}
+
+@media (min-width: 1200px){
+	#L{
+		float: left;
+		width: 20%;
+	}
+	#R{
+		float: right;
+		width: 20%;
+	}
+	#C{
+		margin: 0 20% 0 20%;
+	}
+}
+
+.Item, .Item-{
+	text-align: center;
+}
+
+@media (min-width: 708px) {
+	.Item{
+		float: left;
+		width: 50%;
+	}
+}
+@media (min-width: 708px) {
+	.R, .L{
+		float: left;
+	}
+	.L{
+		width: 65%;
+	}
+	.R{
+		width: 35%;
+	}
+}
+
+@media (min-width: 708px) {
+	.Item-{
+		float: left;
+		width: 33%;
+	}
+}
+
+@media (min-width: 708px) {
+	.Item-2{
+		float: left;
+		width: 33%;
+		padding: 1%;
+	}
+}
+
+#Cild{
+	margin: 0 0 0 3%;
+}
+
+#date{
+	font-size: 12px;
+	color: #ff9900
+}
+
+#O{
+	color: #ff9900;
+}
+
+#author, #author a{
+	color: #00ffff
+}
+
+/*---ItemTable---*/
+#IT{
+	font-size: 100px;
+	width: 100%;
+	text-align: center;
+}
+
+#i img{
+	width: 256px;
+	height: 256px;
+	object-fit: cover;
+	object-position: center;
+}
+
+#i::after, #i2::after{
+	content: attr(title); 
+	position: absolute;
+	transform: translate(-261px, 218px);
+	padding: 5px 10px;
+	max-width: 236px;
+	z-index: 3;
+	background: rgba(255,255,230,0.9);
+	font-size: 20px;
+	color: #201c1d;
+	font-weight: 600;
+}
+
+#i2::after{
+	transform: translate(-646px, 331px);
+	max-width: 100%;
+	font-size: 24px;
+}
+#i:hover::after, #i2:hover::after{
+	background: rgba(250,150,0,0.9);
+}
+
+.block{
+	display: none;
+	position: fixed;
+	width: 80%;
+	height: 90%;
+	left: 10%;
+	top: 3%;
+	background-color: rgba(0,0,0,0.8);
+	padding: 1%;
+	z-index: 5;
+}
+
+.block:target{
+    display: block
+}
+
+/*---Footer---*/
+#footer{
+	display: flex;
+	width: 100%;
+	padding-bottom: 6px;
+	color: #f5f9cc;
+	background:  url(../../../Images/Absolver/UI_RewardChallenge_BackgroundGlow.png);
+	background-size: cover;
+	background-position: 50% 20%;
+}
+
+.col-R, .col-L{
+	min-height: 1px;
+	padding-left: 15px;
+	padding-right: 15px;
+	box-sizing: border-box;
+}
+
+@media (min-width: 708px){
+	.col-R, .col-L{
+		float: left;
+		width: 50%;
+	}
+	.col-L{
+		text-align-last: left;
+	}
+	.col-R{
+		text-align-last: right;
+	}
+}
+
+.logo-bg-container{
+	width:0;
+	height:40px;
+	background:#f62548;
+	transition:all .5s ease
+}
+
+.logo-bg-container:hover{
+	width:137px
+}
+
+/*---Button---*/
+
+#botton{
+	display: inline-block;
+	cursor: pointer;
+	font-size:12px;
+	text-decoration:none;
+	padding:10px 20px;
+	color: #f5f9cc;
+	background:#201c1d;
+	border-radius:0px;
+	border:3px solid  #f5f9cc;
+}
+#botton:hover{
+	background:#ccc7b6;
+	color:#201c1d;
+	border:3px solid #201c1d;
+	transition: all 0.6s ease;
+}
+
+/*---ScrollBar---*/
+
+::-webkit-scrollbar{
+	width: 8px;
+	height: 8px;
+}
+
+::-webkit-scrollbar-track{
+	background: #666666; 
+}
+
+::-webkit-scrollbar-thumb{
+	background: #c4c4c4; 
+}
+
+::-webkit-scrollbar-thumb:hover{
+	background: #e6e6e6; 
+}
+
+/*---Theme---*/
+
+.switcher{
+	position: absolute;
+	margin: 0;
+	padding: 2px;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	border: none;
+}
+
+.switcher__radio{
+	-webkit-appearance: none;
+	appearance: none;
+	margin: 0;
+	width: 32px;
+	height: 32px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 24px;
+	transition: filter 0.1s ease-in;
+}
+
+.switcher__radio:focus{
+	outline: none;
+}
+
+.switcher__radio--light{
+	background-image: url(../../../Images/icons/light.svg);
+	z-index: 2;
+}
+
+.switcher__radio--auto{
+	background-image: url(../../../Images/icons/auto.svg);
+	z-index: 2;
+}
+
+.switcher__radio--dark{
+	background-image: url(../../../Images/icons/dark.svg);
+	z-index: 2;
+}
+
+
+
+.switcher__status{
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	box-shadow: 0 0 0 2px rgb(0 0 0 / 0.2);
+	border-radius: 18px;
+	background-color: rgb(255 255 255 / 0.5);
+	background-repeat: no-repeat;
+	background-image: url(../../../Images/icons/status.svg);
+	background-size: 32px;
+	background-position: center;
+	transition: background-position 0.1s ease-in;
+}
+
+.switcher__radio:focus-visible ~ .switcher__status{
+	box-shadow: 0 0 0 2px black;
+}
+
+.switcher__radio--light:checked ~ .switcher__status{
+	background-position: left 2px center;
+}
+
+.switcher__radio--auto:checked ~ .switcher__status{
+	background-position: center center;
+}
+
+.switcher__radio--dark:checked ~ .switcher__status{
+	background-position: right 2px center;
+}
