@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css?family=Rubik:300,regular,500,600,700,800,900');
+
+body{
+	color: #fbfbfb;
+	background-color: #202020;
+	image-rendering: pixelated;
+	font-family: Rubik, sans-serif;
+	font-size: 14px;
+	line-height: 20px;
+	margin: 0;
+}
+
+h2{
+	text-transform: uppercase;
+	margin: 15px 0;
+	font-size: 48px;
+	line-height: 110%;
+}
+
+h3{
+	margin-top: 20px;
+	font-size: 24px;
+	line-height: 30px;
+}
+
+h4{
+	margin-top: 10px;
+	font-size: 18px;
+	line-height: 24px;
+}
+
+h5 {
+	margin-top: 10px;
+	font-size: 14px;
+}
+
+a{
+	color: #fbfbfb;
+	text-decoration: none;
+}
+
+p {
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 150%;
+}
+
+#author, #author a{
+	color: #00ffff;
+	text-decoration: revert;
+}
+
+header{ 
+	position: fixed;
+	top: 0;
+	width: 100%;
+	padding: 16px;
+    background-color: #00000054;
+	z-index: 1;
+}
+
+header a{
+	font-size: 36px;
+	font-weight: 900;
+}
+
+#fon{
+	height: 100vh;
+	width: 100%;
+	background-image: url(../../Images/Sifu/TimeAttack_female.jpg);
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+#C{
+	padding: 60px 0;
+}
+
+@media (min-width: 669px){
+	#C{
+		padding: 60px 150px;
+	}
+}
+
+#R, #L{
+	min-height: 1px;
+	padding-left: 15px;
+	padding-right: 15px;
+	box-sizing: border-box;
+}
+
+@media (min-width: 991px){
+	#R, #L{
+		float: left;
+		width: 50%;
+	}
+}
+
+/*---ItemTable---*/
+#IT{
+	font-size: 100px;
+	grid-column-gap: 50px;
+    grid-row-gap: 16px;
+    grid-template-columns: repeat(auto-fit, minmax(369px, 1fr));
+    display: grid;
+}
+
+#i img{
+	width: 100%;
+	object-fit: cover;
+	object-position: center;
+}
+
+#video{
+	position: relative;
+	width: 100%;
+	aspect-ratio: 16/9;
+}
+
+#video iframe{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.date_text {
+	font-size: 18px;
+	font-weight: 300;
+}
+
+.news_title {
+	text-transform: uppercase;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	font-size: 32px;
+	font-weight: 900;
+	line-height: 120%;
+}
+
+.news_title.bold {
+	font-weight: 700;
+}
+
+.news_title.bold.center {
+	text-align: center;
+}
+
+
+.news_link {
+	color: #fbfbfb;
+	text-transform: uppercase;
+	cursor: pointer;
+	margin-top: 30px;
+	font-size: 24px;
+	font-weight: 900;
+	line-height: 120%;
+}
+
+.news_link:hover {
+	text-decoration: underline;
+}
+
+/*---News---*/
+
+#news_top_wrapper{
+	margin-bottom: 100px;
+}
+
+#news_top_wrapper img{
+	width: 100%;
+}
+
+#alone_text{
+	display: block;
+	text-align: center;
+    text-transform: uppercase;
+    margin-top: 15px;
+    margin-left: 0;
+    padding-bottom: 10px;
+    padding-left: 0;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 120%;
+}
+
+/*---Footer---*/
+
+footer, footer iframe{
+	overflow: hidden;
+	width: 100%;
+	height: 112px;
+}
+
+.col-R, .col-L{
+	min-height: 1px;
+	padding-left: 15px;
+	padding-right: 15px;
+	box-sizing: border-box;
+}
+
+@media (min-width: 708px){
+	.col-R, .col-L{
+		float: left;
+		width: 50%;
+	}
+	.col-L{
+		text-align-last: left;
+	}
+	.col-R{
+		text-align-last: right;
+	}
+}
+
+.logo-bg-container{
+	width:0;
+	height:40px;
+	background:#f62548;
+	transition:all .5s ease
+}
+
+.logo-bg-container:hover{
+	width:137px
+}
+
+iframe{
+	border: 0px;
+}
+
+/*---ScrollBar---*/
+
+::-webkit-scrollbar{
+	width: 8px;
+	height: 8px;
+}
+
+::-webkit-scrollbar-track{
+	background: #666666; 
+}
+
+::-webkit-scrollbar-thumb{
+	background: #c4c4c4; 
+}
+
+::-webkit-scrollbar-thumb:hover{
+	background: #e6e6e6; 
+}

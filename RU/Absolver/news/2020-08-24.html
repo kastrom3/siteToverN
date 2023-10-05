@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<link rel="shortcut icon" href="../../../Images/Absolver/favicon.png" type="image/png">
+	<title>Стрим Peeve 3</title>
+	<meta name="description" content="Стример Peeve, повышает онлайн Absolver!">
+	<meta name="keywords" content="ToverN, ToverN Grup, Absolver, Новости">
+	<script>
+		if (matchMedia('(prefers-color-scheme: dark)').media === 'not all') {
+			document.documentElement.style.display = 'none';
+			document.head.insertAdjacentHTML(
+				'beforeend',
+				'<link rel="stylesheet" href="../styles/light.css" onload="document.documentElement.style.display=\'\'">'
+				);
+			}
+	</script>
+
+	<link rel="stylesheet" href="../../../SmartPhoto/css/smartphoto.min.css">
+	<link rel="stylesheet" href="../styles/light.css" media="(prefers-color-scheme: light)">
+	<link rel="stylesheet" href="../styles/dark.css" media="(prefers-color-scheme: dark)">
+	<link rel="stylesheet" href="../styles/index.css">
+</head>
+<body>
+	<header>
+		<a href="../news"><img src="../../../Images/Absolver/UI/arrow_right.png" style="transform: rotateY(180deg);"></a>
+		<fieldset class="switcher">
+			<input class="switcher__radio switcher__radio--light" type="radio" name="color-scheme" value="light" aria-label="Светлая">
+			<input class="switcher__radio switcher__radio--auto" type="radio" name="color-scheme" value="auto" aria-label="Системная" checked>
+			<input class="switcher__radio switcher__radio--dark" type="radio" name="color-scheme" value="dark" aria-label="Тёмная">
+			<div class="switcher__status"></div>
+		</fieldset>
+		<script src="../index.js"></script>
+	</header>
+	<main>
+		<div id="C" style="padding-top: 75px;">
+			<time datetime="2020-08-24">2020.08.24</time>
+			<p>Peeve делает что-то невероятное!<br>
+				Сегодня в 4 утра по МСК просмотры на твиче превысили 4.200 зрителей! Это рекорд за последние 2,5 года! (игре уже почти 3 года, и на релизе было более 13.000 зрителей, а 11 сентября 2017 года было чуть больше чем сейчас, буквально на пару десятков!)<br>
+				+ сейчас онлайн значительно поднялся!</p>
+			<a href="../../../Images/Absolver/News/img/Peeve3.1.png" class="js-img-viewer"><img id="center" src="../../../Images/Absolver/News/img/Peeve3.1.jpg"></a>
+			<br>
+			<a href="../../../Images/Absolver/News/img/Peeve3.2.png" class="js-img-viewer"><img id="center" src="../../../Images/Absolver/News/img/Peeve3.2.jpg"></a>
+		</div>
+	</main>
+	<script src="../../../SmartPhoto/js/smartphoto.js?v=1"></script>
+	<script>
+		document.addEventListener('DOMContentLoaded',function(){
+			const sm = new SmartPhoto(".js-img-viewer", {
+				showAnimation: false
+			});
+			// sm.destroy();
+		});
+	</script>
+	<footer>
+		<iframe src="../footer.html"></iframe>
+	</footer>
+</body>
+</html>

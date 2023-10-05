@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<link rel="shortcut icon" href="../../../../../Images/Absolver/favicon.png" type="image/png">
+		<title>Моды ToverN</title>
+		<meta name="description" content="Список Модов от ToverN Grup">
+		<meta name="keywords" content="ToverN, ToverN Grup, Absolver, Моды">
+		
+		<script>
+			if (matchMedia('(prefers-color-scheme: dark)').media === 'not all') {
+				document.documentElement.style.display = 'none';
+				document.head.insertAdjacentHTML(
+					'beforeend',
+					'<link rel="stylesheet" href="../../../styles/light.css" onload="document.documentElement.style.display=\'\'">'
+				);
+			}
+		</script>
+
+		<link rel="stylesheet" href="../../../styles/light.css" media="(prefers-color-scheme: light)">
+		<link rel="stylesheet" href="../../../styles/dark.css" media="(prefers-color-scheme: dark)">
+		<link rel="stylesheet" href="../../../styles/index.css">
+		<link rel="stylesheet" href="../changelog.css">
+	</head>
+	<body>
+		<header>
+			<a href="../"><img src="../../../../../Images/Absolver/UI/arrow_right.png" style="transform: rotateY(180deg);"></a>
+			<fieldset class="switcher">
+				<input class="switcher__radio switcher__radio--light" type="radio" name="color-scheme" value="light" aria-label="Светлая">
+				<input class="switcher__radio switcher__radio--auto" type="radio" name="color-scheme" value="auto" aria-label="Системная" checked>
+				<input class="switcher__radio switcher__radio--dark" type="radio" name="color-scheme" value="dark" aria-label="Тёмная">
+				<div class="switcher__status"></div>
+			</fieldset>
+		</header>
+		<main style="padding-top: 90px;">
+			<div id="C">
+			<img id="center" src="../../../../../Images/Absolver/Mods/Resolver.png">
+			<p>На данный момент находиться на стадии бета теста. Мод будет перерабатывать систему NPC, добавлять новые предметы, эмоции и приёмы, а так-же перебалансирует боевую систему.</p>
+			<itemtable>
+				<div class="I" style="width: 100%;">
+					<div id="video">
+						<iframe src="https://www.youtube.com/embed/JfsDe_HTdV0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+					</div>
+				</div>
+				<div class="I" style="text-align: left;">
+					<h3>Трейлер для Закрытого Бета Теста</h3>
+					<p>Снималось на версии мода до ЗБТ, новые приёмы были уже пару раз перебалансированы. А так-же добавилось ещё множество изменений!</p>
+					<a id="button" href="https://discord.gg/ngk6SuemmJ" target="_blank" style="font-size: 21px;"><b>Участвовать в бета тесте</b></a>
+				</div>
+			</itemtable>
+			<hr>
+			<h2 id="ver">Чейнджлоги</h2>
+			<ul id="list">
+				<li><a class="block-open" href="#B1-0" onClick='showDialog()'>Resolver ver B.1.0</a></li>
+			</ul>
+			<div class="block" id="B1-0">
+				<a class="block-close" href="#ver" onClick='showDialog()'></a>
+				<iframe src="ChagelogB-1-0.html" width="100%" height="100%"></iframe>
+			</div>
+		</div>
+	</main>
+	<script src="../../../index.js"></script>
+	<footer>
+		<iframe src="../../../footer.html"></iframe>
+	</footer>
+</body>
+</html>

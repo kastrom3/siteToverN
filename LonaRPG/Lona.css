@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;800&display=swap');
-
 @font-face {
 	font-family: "Noto Sans CJK TC Black"; 
 	src: url("NotoSansCJKtc-Black.otf") format("truetype"); 
@@ -87,7 +85,7 @@ iframe{
 
 .block{
     display: none;
-    height: -webkit-fill-available;
+    height: 100%;
 	background-color: rgba(0,0,0,0.6);
 	padding-left: 30px;
 	padding-right: 30px;

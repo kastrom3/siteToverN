@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <link rel="shortcut icon" href="../../../Images/Absolver/favicon.png" type="image/png">
+    <title>Видео</title>
+	<meta name="description" content="Раздел видео по Absolver">
+	<meta name="keywords" content="ToverN, ToverN Grup, Absolver, Видео">
+	
+	<script>
+        if (matchMedia('(prefers-color-scheme: dark)').media === 'not all') {
+            document.documentElement.style.display = 'none';
+            document.head.insertAdjacentHTML(
+                'beforeend',
+                '<link rel="stylesheet" href="../styles/light.css" onload="document.documentElement.style.display=\'\'">'
+            );
+        }
+    </script>
+
+    <link rel="stylesheet" href="../styles/light.css" media="(prefers-color-scheme: light)">
+    <link rel="stylesheet" href="../styles/dark.css" media="(prefers-color-scheme: dark)">
+    <link rel="stylesheet" href="../styles/index.css">
+</head>
+<body>
+	<header>
+		<a href="../"><img src="../../../Images/Absolver/UI/arrow_right.png" style="transform: rotateY(180deg);"></a>
+		<fieldset class="switcher">
+			<input class="switcher__radio switcher__radio--light" type="radio" name="color-scheme" value="light" aria-label="Светлая">
+			<input class="switcher__radio switcher__radio--auto" type="radio" name="color-scheme" value="auto" aria-label="Системная" checked>
+			<input class="switcher__radio switcher__radio--dark" type="radio" name="color-scheme" value="dark" aria-label="Тёмная">
+			<div class="switcher__status"></div>
+		</fieldset>
+		<script src="../index.js"></script>
+	</header>
+     <main style="padding-top: 75px;">
+         <div id="C">
+			<itemtable>
+				<div class="I"><a href="Video.html"><img src="../../../Images/Absolver/Video/Videos_ToverN.png"><br>Видео от ToverN</a></div>
+				<div class="I"><a href="Images.html"><img src="../../../Images/Absolver/Video.png"><br>Обложки моих видео</a></div>
+				<div class="I"><a href="Recommended.html"><img src="../../../Images/Absolver/Video/Recommended.png"><br>Видео от других авторов</a></div>
+				<div class="I" style="width: 100%;">
+					<div id="video">
+						<iframe src="https://www.youtube.com/embed/videoseries?si=fheRNn8rvuSm_dqh&list=PLqf7wJllFWxjRv5BebNu39ozpzetxX6SR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+					</div>Оффициальные видео
+				</div>
+			</itemtable>
+        </div>
+        </main>
+		<footer>
+			<iframe src="../footer.html"></iframe>
+		</footer>
+   </body>
+  </html>

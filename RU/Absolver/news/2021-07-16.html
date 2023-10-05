@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<link rel="shortcut icon" href="../../../Images/Absolver/favicon.png" type="image/png">
+	<title>Проблемы с серверами</title>
+	<meta name="description" content="Несколько дней назад у возникли проблемы с серверами Absolver (особенно в Европе).">
+	<meta name="keywords" content="ToverN, ToverN Grup, Absolver, Новости">
+	<script>
+		if (matchMedia('(prefers-color-scheme: dark)').media === 'not all') {
+			document.documentElement.style.display = 'none';
+			document.head.insertAdjacentHTML(
+				'beforeend',
+				'<link rel="stylesheet" href="../styles/light.css" onload="document.documentElement.style.display=\'\'">'
+				);
+			}
+	</script>
+
+	<link rel="stylesheet" href="../styles/light.css" media="(prefers-color-scheme: light)">
+	<link rel="stylesheet" href="../styles/dark.css" media="(prefers-color-scheme: dark)">
+	<link rel="stylesheet" href="../styles/index.css">
+</head>
+<body>
+	<header>
+		<a href="../news"><img src="../../../Images/Absolver/UI/arrow_right.png" style="transform: rotateY(180deg);"></a>
+		<fieldset class="switcher">
+			<input class="switcher__radio switcher__radio--light" type="radio" name="color-scheme" value="light" aria-label="Светлая">
+			<input class="switcher__radio switcher__radio--auto" type="radio" name="color-scheme" value="auto" aria-label="Системная" checked>
+			<input class="switcher__radio switcher__radio--dark" type="radio" name="color-scheme" value="dark" aria-label="Тёмная">
+			<div class="switcher__status"></div>
+		</fieldset>
+		<script src="../index.js"></script>
+	</header>
+	<main>
+		<div id="C" style="padding-top: 75px;">
+			<time datetime="2021-07-16">2021.07.16</time>
+			<p>Проблемы с серверами (Снова)</p>
+			<blockquote class="twitter-tweet" align="center">
+				<p lang="en" dir="ltr">We've been having issues on Absolver servers since a couple of days (especially in Europe). We're actively working on solving this problem, and will update you as soon as possible!</p>— Absolver (@Absolver) <a href="https://twitter.com/Absolver/status/1415950393637588997?ref_src=twsrc%5Etfw">July 16, 2021</a>
+				<p>Если вы видите этот текст значит Твитер по какой-то причине не доступен</p>
+			</blockquote>
+			<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+			<p>Перевод: Несколько дней назад у нас возникли проблемы с серверами Absolver (особенно в Европе). Мы активно работаем над решением этой проблемы и сообщим вам как можно скорее!</p>
+		</div>
+	</main>
+	<footer>
+		<iframe src="../footer.html"></iframe>
+	</footer>
+</body>
+</html>

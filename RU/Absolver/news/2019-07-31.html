@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<link rel="shortcut icon" href="../../../Images/Absolver/favicon.png" type="image/png">
+	<title>Запоздавшие плохие новости</title>
+	<meta name="description" content="Sloclap прекратила разработку Absolver, и сейчас занимается новой игрой.">
+	<meta name="keywords" content="ToverN, ToverN Grup, Absolver, Новости">
+	<script>
+		if (matchMedia('(prefers-color-scheme: dark)').media === 'not all') {
+			document.documentElement.style.display = 'none';
+			document.head.insertAdjacentHTML(
+				'beforeend',
+				'<link rel="stylesheet" href="../styles/light.css" onload="document.documentElement.style.display=\'\'">'
+				);
+			}
+	</script>
+
+	<link rel="stylesheet" href="../../../SmartPhoto/css/smartphoto.min.css">
+	<link rel="stylesheet" href="../styles/light.css" media="(prefers-color-scheme: light)">
+	<link rel="stylesheet" href="../styles/dark.css" media="(prefers-color-scheme: dark)">
+	<link rel="stylesheet" href="../styles/index.css">
+</head>
+<body>
+	<header>
+		<a href="../news"><img src="../../../Images/Absolver/UI/arrow_right.png" style="transform: rotateY(180deg);"></a>
+		<fieldset class="switcher">
+			<input class="switcher__radio switcher__radio--light" type="radio" name="color-scheme" value="light" aria-label="Светлая">
+			<input class="switcher__radio switcher__radio--auto" type="radio" name="color-scheme" value="auto" aria-label="Системная" checked>
+			<input class="switcher__radio switcher__radio--dark" type="radio" name="color-scheme" value="dark" aria-label="Тёмная">
+			<div class="switcher__status"></div>
+		</fieldset>
+		<script src="../index.js"></script>
+	</header>
+	<main>
+		<div id="C" style="padding-top: 75px;">
+			<time datetime="2019-07-31">2019.07.31</time>
+			<p>
+				Хоть и с большим опозданием (я сам блин недавно узнал ибо не состоял в Absolver | Official Discord) но Sloclap Team прекратила разработку Absolver, и сейчас занимается новой игрой. (будем надеяться на расширения вселенной Absolver!)<br>
+				Вот скриншот поста:
+			</p>
+			<a href="../../../Images/Absolver/News/img/DS1.jpg" class="js-img-viewer"><img id="center" src="../../../Images/Absolver/News/img/DS1.jpg"></a>
+			<p>Перевод: Привет всем, просто чтобы публично подтвердить, что происходило в последнее время: некоторое время назад мы допустили ошибку на корпоративном сайте Sloclap, в котором упоминалось, что команда работает над будущими обновлениями Absolver. Это был устаревший текст, который должен был быть удален ранее, и с тех пор исправлялся: помимо завершения переведенных версий Absolver для Китая и Японии, команда теперь сосредоточилась на нашем следующем проекте. Извините, если это не самая захватывающая новость - после обсуждений с командой модов мы подумали, что важно прояснить это, чтобы игроки не создавали ложных ожиданий. Однако будьте уверены, что серверы Absolver будут работать в обозримом будущем!</p>
+		</div>
+	</main>
+	<script src="../../../SmartPhoto/js/smartphoto.js?v=1"></script>
+	<script>
+		document.addEventListener('DOMContentLoaded',function(){
+			const sm = new SmartPhoto(".js-img-viewer", {
+				showAnimation: false
+			});
+			// sm.destroy();
+		});
+	</script>
+	<footer>
+		<iframe src="../footer.html"></iframe>
+	</footer>
+</body>
+</html>

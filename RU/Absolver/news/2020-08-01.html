@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<link rel="shortcut icon" href="../../../Images/Absolver/favicon.png" type="image/png">
+	<title>Special Reserve Games 1</title>
+	<meta name="description" content="На сайте Special Reserve Games, теперь можно указать Российский Адресс! Так-что теперь вы можете спокойно купить Маску Абзолвера!">
+	<meta name="keywords" content="ToverN, ToverN Grup, Absolver, Новости">
+	<script>
+		if (matchMedia('(prefers-color-scheme: dark)').media === 'not all') {
+			document.documentElement.style.display = 'none';
+			document.head.insertAdjacentHTML(
+				'beforeend',
+				'<link rel="stylesheet" href="../styles/light.css" onload="document.documentElement.style.display=\'\'">'
+				);
+			}
+	</script>
+
+	<link rel="stylesheet" href="../styles/light.css" media="(prefers-color-scheme: light)">
+	<link rel="stylesheet" href="../styles/dark.css" media="(prefers-color-scheme: dark)">
+	<link rel="stylesheet" href="../styles/index.css">
+</head>
+<body>
+	<header>
+		<a href="../news"><img src="../../../Images/Absolver/UI/arrow_right.png" style="transform: rotateY(180deg);"></a>
+		<fieldset class="switcher">
+			<input class="switcher__radio switcher__radio--light" type="radio" name="color-scheme" value="light" aria-label="Светлая">
+			<input class="switcher__radio switcher__radio--auto" type="radio" name="color-scheme" value="auto" aria-label="Системная" checked>
+			<input class="switcher__radio switcher__radio--dark" type="radio" name="color-scheme" value="dark" aria-label="Тёмная">
+			<div class="switcher__status"></div>
+		</fieldset>
+		<script src="../index.js"></script>
+	</header>
+	<main>
+		<div id="C" style="padding-top: 75px;">
+			<time datetime="2020-08-01">2020.08.01</time>
+			<p><b>На сайте Special Reserve Games, теперь можно указать Российский Адресс!</b></p>
+			<p>Так-что если вы хотели купить Маску, то теперь можно не переплачивать сервисам и не боятся что посылку украдут. Однако тираж масок закончился и теперь придётся ждать пополнения. </p>
+			<a href="https://specialreservegames.com/absolver-mask/" target="_blank"><img id="center" src="../../../Images/Absolver/News/img/SRG.jpg"></a>
+		</div>
+	</main>
+	<footer>
+		<iframe src="../footer.html"></iframe>
+	</footer>
+</body>
+</html>

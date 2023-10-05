@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<link rel="shortcut icon" href="../../../Images/Absolver/favicon.png" type="image/png">
+	<title>Special Reserve Games 2</title>
+	<meta name="description" content="Новый тираж Издания Absolver [Mask] уже поступил в продажу! Его можно купить за $34.99.">
+	<meta name="keywords" content="ToverN, ToverN Grup, Absolver, Новости">
+	<script>
+		if (matchMedia('(prefers-color-scheme: dark)').media === 'not all') {
+			document.documentElement.style.display = 'none';
+			document.head.insertAdjacentHTML(
+				'beforeend',
+				'<link rel="stylesheet" href="../styles/light.css" onload="document.documentElement.style.display=\'\'">'
+				);
+			}
+	</script>
+
+	<link rel="stylesheet" href="../styles/light.css" media="(prefers-color-scheme: light)">
+	<link rel="stylesheet" href="../styles/dark.css" media="(prefers-color-scheme: dark)">
+	<link rel="stylesheet" href="../styles/index.css">
+</head>
+<body>
+	<header>
+		<a href="../news"><img src="../../../Images/Absolver/UI/arrow_right.png" style="transform: rotateY(180deg);"></a>
+		<fieldset class="switcher">
+			<input class="switcher__radio switcher__radio--light" type="radio" name="color-scheme" value="light" aria-label="Светлая">
+			<input class="switcher__radio switcher__radio--auto" type="radio" name="color-scheme" value="auto" aria-label="Системная" checked>
+			<input class="switcher__radio switcher__radio--dark" type="radio" name="color-scheme" value="dark" aria-label="Тёмная">
+			<div class="switcher__status"></div>
+		</fieldset>
+		<script src="../index.js"></script>
+	</header>
+	<main>
+		<div id="C" style="padding-top: 75px;">
+			<time datetime="2020-08-18">2020.08.18</time>
+			<p>
+				Новый тираж Издания Absolver [Mask] уже поступил в продажу! Его можно купить за $34.99.
+				<br>(На момент публикации поста это равно: 2 573,93 руб)
+				<br>Напоминаю что в этот комплект входит:
+			</p>
+			<ul>
+				<li>Маска Симеона</li>
+				<li>Арт-бук (он точно такой-же как и в Делюкс Издании, но уже напечатанный)</li>
+				<li>И 3 наклейки </li>
+			</ul>
+			<a href="https://specialreservegames.com/absolver-mask/" target="_blank"><img id="center" src="../../../Images/Absolver/News/img/SRG.jpg"></a>
+		</div>
+	</main>
+	<footer>
+		<iframe src="../footer.html"></iframe>
+	</footer>
+</body>
+</html>

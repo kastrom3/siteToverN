@@ -1,13 +1,30 @@
 * {
-	--image: url(../../../Images/Absolver/background_brown.jpg);
-	--sprt: url(../../../Images/Absolver/listing_separator.png);
+	--image: url(../../../Images/Absolver/UI/background_brown.jpg);
+	--sprt: url(../../../Images/Absolver/UI/listing_separator.png);
 	--color:#f5f9cc;
 	--color2:#dbdccb;
-	--ico: url(../../../Images/Absolver/list-style-D.png);
+	--ico: url(../../../Images/Absolver/UI/list-style-D.png);
 	--Color: #444;
 	--Color2: #000;
 	--p: #ddd;
 	--h2: #fff;
+	--smartphoto: #36302e;
+}
+
+.smartphoto-header{
+	background: linear-gradient(#0009 60%, #0000);
+}
+
+.smartphoto-dismiss{
+	filter: invert(1);
+}
+
+.smartphoto-arrow-left, .smartphoto-arrow-right{
+	background:  radial-gradient(circle, #36302eff 0%, #36302e00 75%);
+}
+
+.smartphoto-arrow-left a, .smartphoto-arrow-right a{
+	filter: invert(1);
 }
 
 .switcher__radio {

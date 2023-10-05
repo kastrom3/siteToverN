@@ -2,8 +2,9 @@
 <html lang="ru">
 <head>
 	<link rel="shortcut icon" href="../../Images/Absolver/favicon.png" type="image/png">
-	<meta charset="UTF-8">
 	<title>Absolver</title>
+	<meta name="description" content="Главная страница раздела по Absolver">
+	<meta name="keywords" content="ToverN, ToverN Grup, Absolver">
 	<script>
 		if (matchMedia('(prefers-color-scheme: dark)').media === 'not all') {
 			document.documentElement.style.display = 'none';
@@ -12,85 +13,72 @@
 				'<link rel="stylesheet" href="styles/light.css" onload="document.documentElement.style.display=\'\'">'
 				);
 			}
-		</script>
+	</script>
 
 	<link rel="stylesheet" href="styles/light.css" media="(prefers-color-scheme: light)">
 	<link rel="stylesheet" href="styles/dark.css" media="(prefers-color-scheme: dark)">
 	<link rel="stylesheet" href="styles/index.css">
+	<style>
+		@media (min-width: 708px){#fonf itemtable{display: block;}}
+		@media (min-width: 900px){#fonf itemtable{display: grid; grid-template-columns: 1fr 1fr; justify-items: center; padding: 12px;}}
+		@media (min-width: 1500px){#fonf itemtable{display: grid; grid-template-columns: 1fr 1fr max-content max-content; grid-gap: 12px;}}
+		#fonf *{margin-top: 0;}
+		.i2{width: 100%; height: 200px;}
+		#i-{margin: 6px auto; pointer-events: none; overflow: hidden; width: 290px; height: 225px;}
+		#i- iframe{border: 0px; margin-left: 0px; margin-top: -235px; width: 290px; height: 1000px;}
+	</style>
 </head>
 <body>
-	<div id="header">
-		<div class="col-L">
-			<a href="../"><img src="../../Images/Absolver/arrow_right.png" style="transform: rotateY(180deg);"></a>
-		</div>
-		<div class="col-R">	<fieldset class="switcher">
-				<input class="switcher__radio switcher__radio--light" type="radio" name="color-scheme" value="light" aria-label="Светлая">
-				<input class="switcher__radio switcher__radio--auto" type="radio" name="color-scheme" value="auto" aria-label="Системная" checked>
-				<input class="switcher__radio switcher__radio--dark" type="radio" name="color-scheme" value="dark" aria-label="Тёмная">
-				<div class="switcher__status"></div>
-			</fieldset>
-			<script src="index.js"></script>
-		</div>
+	<header>
+		<a href="../"><img src="../../Images/Absolver/UI/arrow_right.png" style="transform: rotateY(180deg);"></a>
+		<fieldset class="switcher">
+			<input class="switcher__radio switcher__radio--light" type="radio" name="color-scheme" value="light" aria-label="Светлая">
+			<input class="switcher__radio switcher__radio--auto" type="radio" name="color-scheme" value="auto" aria-label="Системная" checked>
+			<input class="switcher__radio switcher__radio--dark" type="radio" name="color-scheme" value="dark" aria-label="Тёмная">
+			<div class="switcher__status"></div>
+		</fieldset>
+		<script src="index.js"></script>
+	</header>
+	<div id="fon" style="background-image: url(../../Images/Absolver/Fon.jpg); align-items: flex-end; justify-content: flex-start;">
+		<img style="padding: 3%; width: max(30%, 560px);" src="../../Images/Absolver/Absolver_Logo_Downfall.png" alt="ᴀʙsᴏʟᴠᴇʀ">
 	</div>
-	<div id="fon" style="background-image: url(../../Images/Absolver/Fon.jpg);">
-		<img style="padding: 12% 0 0 9%;" src="../../Images/Absolver/Absolver_Logo_Downfall.png" width="30%" alt="ToverN">
-	</div>
-	<div id="con" style="margin: -24px 0 0 0;">
+	<main style="margin: -24px 0 0 0;">
 		<div id="C">
-			<div class="Item"><a href="works"><img src="../../Images/Absolver/Works.png" width="96%"><br>Мои работы</a></div>
-			<div class="Item"><a href="news"><img src="../../Images/Absolver/News.png" width="96%"><br>Новости Absolver</a></div>
-			<div class="Item"><a href="AbsolverWorldMap/absolver-worldmap.html"><img src="../../Images/Absolver/Map.png" width="96%"><br>Карта мира Absolver на русском!</a></div>
-			<div class="Item"><a href="Video.html"><img src="../../Images/Absolver/Video.png" width="96%"><br>Рекомендуем к просмотру</a></div>
+			<itemtable>
+				<a class="I"  href="projects"><img src="../../Images/Absolver/Projects.png"><br>Проекты</a>
+				<a class="I"  href="news"><img src="../../Images/Absolver/News.png"><br>Новости Absolver</a>
+				<a class="I"  href="AbsolverWorldMap/absolver-worldmap.html"><img class="mask16" src="../../Images/Absolver/AbsolverWorldMap/FullMap+.jpg"><br>Карта мира Absolver на русском!</a>
+				<a class="I"  href="Video"><img src="../../Images/Absolver/Video.png"><br>Видео</a>
+			</itemtable>
 
-			<div class="Item-"><a href="Press-kit_Absolver.html"><img src="../../Images/Absolver/previewABS.png" width="96%"><br>Пресс-кит Absolver</a></div>
-			<div class="Item-"><a href="FAQ.html"><img src="../../Images/Absolver/FAQ.png" width="96%"><br><b style="font-size: 30px;">FAQ для новичков</b></a></div>
-			<div class="Item-"><a href="Developers.html"><img src="../../Images/Absolver/abs.png" width="96%"><br>Список Разработчиков</a></div>
+			<itemtable style="grid-template-columns: 1fr 1fr 1fr;">
+				<a class="I" href="Press-kit_Absolver.html"><img src="../../Images/Absolver/Press-kit.png"><br>Пресс-кит Absolver</a>
+				<a class="I"  href="FAQ.html"><img src="../../Images/Absolver/FAQ.png"><br><b style="font-size: 30px;">FAQ для новичков</b></a>
+				<a class="I"  href="Developers.html"><img src="../../Images/Absolver/abs.png"><br>Список Разработчиков</a>
+			</itemtable>
 
-			<div class="L"><a href="https://discord.gg/G8HNqWV" target="_blank"><b style="font-size: 45px;">Мы в Discord!</b><img src="../../Images/Absolver/DS_abs.png" width="100%"></a></div>
-			<div class="R"><iframe src="https://discordapp.com/widget?id=710095986332139600&theme=dark" width="100%" height="574px" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe></div>
-			<iframe src="https://e.widgetbot.io/channels/710095986332139600/722096299217911868" height="600px" width="100%" style="border-width: 0px;"></iframe>
+			<itemtable style="grid-template-columns: 2fr 1fr;">
+				<div class="I"><a href="https://discord.gg/G8HNqWV" target="_blank"><h3 style="font-size: 45px;">Мы в Discord!</h3><img class="mask-border" style="-webkit-mask-box-image-width: 130px;" src="../../Images/Absolver/DS_abs.jpg"></a></div>
+				<iframe class="I" src="https://discordapp.com/widget?id=710095986332139600&theme=dark" style="width: 100%; height: 100%; min-height: 600px;" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts" loading="lazy"></iframe>
+			</itemtable>
+			<iframe src="https://e.widgetbot.io/channels/710095986332139600/722096299217911868" height="600px" width="100%" style="border-width: 0px;" loading="lazy"></iframe>
 		</div>
-		<div id="fon" style="background: url(../../Images/Absolver/contact02.jpg); background-size: cover; height: auto;">
-			<div class="Item-2" style="height: 200px;"><iframe src="https://store.steampowered.com/widget/473690/105132/" frameborder="0" width="100%" height="100%"></iframe></div>
-			<div class="Item-2" style="height: 200px;"><iframe src="https://store.steampowered.com/widget/893770/" frameborder="0" width="100%" height="100%"></iframe></div>
-			<div class="Item-2" style="width: auto;"><a href="https://www.gog.com/ru/game/absolver"  target="_blank"><div id="ib"><iframe src="https://www.gog.com/ru/games?query=absolver&order=desc%3Ascore" id="ic" scrolling="no"></iframe></div></a>
-				<style>
-					#ib{
-						pointer-events: none;
-						overflow: hidden;
-						width: 290px;
-						height: 248px;
-					}
-					#ic{
-						border: 0px;
-						margin-left: -670px;
-						margin-top: -269px;
-						width: 1000px;
-						height: 1000px;
-					}
-				</style>
-			</div>
+		<div id="fonf" style="background-image: url(../../Images/Absolver/contact02.jpg); display:block; height: auto;">
+			<h3 align="center">Актуальные цены на игру</h3>
+			<itemtable>
+				<iframe  class="I i2"src="https://store.steampowered.com/widget/473690/105132/" loading="lazy"></iframe>
+				<iframe  class="I i2" src="https://store.steampowered.com/widget/893770/" loading="lazy"></iframe>
+				<a class="I" href="https://www.gog.com/ru/game/absolver"  target="_blank"><div id="i-"><iframe src="https://www.gog.com/ru/game/absolver" scrolling="no" loading="lazy"></iframe></div></a>
+				<a class="I" href="https://www.gog.com/ru/game/absolver_adalian_forest"  target="_blank"><div id="i-"><iframe src="https://www.gog.com/ru/game/absolver_adalian_forest" scrolling="no" loading="lazy"></iframe></div></a>
+			</itemtable>
 		</div>
 		<div id="C">
+			<h3 align="center"><a href="https://steamdb.info/app/473690/charts/" target="_blank">Статистика онлайна за неделю</a></h3>
 			<iframe src="https://steamdb.info/embed/?appid=473690" height="389" style="border:0; overflow:hidden; width:100%;" loading="lazy"></iframe>
 		</div>
-	</div>
-	<div id="footer">
-		<div class="col-L">
-			<div style="width: 137px; height: 40px;"><a href="https://sloclap.com/en" target="_blank"><div class="logo-bg-container"><img src="../../Images/icons/SloClap.svg" style="max-width: none;" width="137px" height="40px"></div></a></div>
-			<a href="http://absolver.com/" target="_blank"><img align="center" src="../../Images/Absolver/UI_Social_AbsolverSite.png" width="60px" height="60px"></a>
-			<a href="https://www.youtube.com/c/Sloclap" target="_blank"><img align="center" src="../../Images/Absolver/UI_Social_YouTube.png" width="60px" height="60px"></a>
-			<a href="https://www.reddit.com/r/absolver/new/" target="_blank"><img align="center" src="../../Images/Absolver/UI_Social_reddit.png" width="60px" height="60px"></a>
-			<a href="https://discord.com/invite/absolver" target="_blank"><img align="center" src="../../Images/Absolver/UI_Social_Discord.png" width="60px" height="60px"></a>
-		</div>
-		<div class="col-R">
-			<div style="height: 40px;"></div>
-			<a href="https://www.youtube.com/channel/UCr0yLxo4vCOanED6B0bpfow" target="_blank"><img align="center" src="../../Images/Absolver/UI_Social_YouTube.png" width="60px" height="60px"></a>
-			<a href="https://www.twitch.tv/kastrom_tovern" target="_blank"><img align="center" src="../../Images/Absolver/UI_Social_twitch.png" width="60px" height="60px"></a>
-			<a href="https://discord.com/invite/CfhvwUd7SA" target="_blank"><img align="center" src="../../Images/Absolver/UI_Social_Discord.png" width="60px" height="60px"></a>
-			<a href="https://imgur.com/user/Kastrom" target="_blank"><img align="center" src="../../Images/Absolver/UI_Social_imgur.png" width="60px" height="60px"></a>
-			<a href="https://vk.com/tovern" target="_blank"><img align="center" src="../../Images/Absolver/UI_Social_VK.png" width="60px" height="60px"></a>
-		</div>
-	</div>
+	</main>
+	<footer>
+		<iframe src="footer.html"></iframe>
+	</footer>
 </body>
 </html>

@@ -1,0 +1,132 @@
+#list{
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+#list li{
+	margin: 20px;
+}
+
+ico{
+	display: inline-block;
+	background-size: contain;
+    background-position: bottom;
+    background-repeat: no-repeat;
+	image-rendering: auto;
+	width: 1.375em;
+	height: 1.375em;
+	margin-bottom: -6px;
+}
+#FS_Avoid{
+	background-image: url(../../../../Images/Absolver/UI/Game/FS_Avoid.png);
+}
+#FS_Balanced{
+	background-image: url(../../../../Images/Absolver/UI/Game/FS_Balanced.png);
+}
+#FS_Drunk{
+	background-image: url(../../../../Images/Absolver/UI/Game/FS_Drunk.png);
+}
+#FS_Jeet{
+	background-image: url(../../../../Images/Absolver/UI/Game/FS_Jeet.png);
+}
+#FS_LP{
+	background-image: url(../../../../Images/Absolver/UI/Game/FS_LP.png);
+}
+#FS_Tank{
+	background-image: url(../../../../Images/Absolver/UI/Game/FS_Tank.png);
+}
+#Fragments{
+	background-image: url(../../../../Images/Absolver/UI/Game/Fragments.png);
+}
+#Crystal{
+	background-image: url(../../../../Images/Absolver/UI/Game/Crystal.png);
+}
+#Lootbox{
+	background-image: url(../../../../Images/Absolver/UI/Game/Lootbox.png);
+}
+#RiftDisk{
+	background-image: url(../../../../Images/Absolver/UI/Game/RiftDisk.png);
+}
+#Mode1v1{
+	background-image: url(../../../../Images/Absolver/UI/Game/Mode1v1.png);
+}
+#Mode3v3{
+	background-image: url(../../../../Images/Absolver/UI/Game/Mode3v3.png);
+}
+#ModeGather{
+	background-image: url(../../../../Images/Absolver/UI/Game/ModeGather.png);
+}
+#WeaponBonus{
+	background-image: url(../../../../Images/Absolver/UI/Game/WeaponBonus.png);
+}
+#Strength{
+	background-image: url(../../../../Images/Absolver/UI/Game/Strength.png);
+}
+#Dexterity{
+	background-image: url(../../../../Images/Absolver/UI/Game/Dexterity.png);
+}
+#Vitality{
+	background-image: url(../../../../Images/Absolver/UI/Game/Vitality.png);
+}
+#Endurance{
+	background-image: url(../../../../Images/Absolver/UI/Game/Endurance.png);
+}
+#Will{
+	background-image: url(../../../../Images/Absolver/UI/Game/Will.png);
+}
+#Mobility{
+	background-image: url(../../../../Images/Absolver/UI/Game/Mobility.png);
+}
+#Power_Light{
+	background-image: url(../../../../Images/Absolver/UI/Game/Power_Light.png);
+}
+#Power_Medium{
+	background-image: url(../../../../Images/Absolver/UI/Game/Power_Medium.png);
+}
+#Power_Heavy{
+	background-image: url(../../../../Images/Absolver/UI/Game/Power_Heavy.png);
+}
+#jump{
+	background-image: url(../../../../Images/Absolver/UI/Game/jump.png);
+	padding: 0.6em;
+	margin: -0.6em;
+	margin-bottom: calc(-0.6em - 6px);
+}
+#right{
+	background-image: url(../../../../Images/Absolver/UI/Game/right.png);
+	padding: 0.6em;
+	margin: -0.6em;
+	margin-bottom: calc(-0.6em - 6px);
+}
+#duck{
+	background-image: url(../../../../Images/Absolver/UI/Game/duck.png);
+	padding: 0.6em;
+	margin: -0.6em;
+	margin-bottom: calc(-0.6em - 6px);
+}
+#parry{
+	background-image: url(../../../../Images/Absolver/UI/Game/parry.png);
+	padding: 0.6em;
+	margin: -0.6em;
+	margin-bottom: calc(-0.6em - 6px);
+}
+#interrupt{
+	background-image: url(../../../../Images/Absolver/UI/Game/interrupt.png);
+	padding: 0.6em;
+	margin: -0.6em;
+	margin-bottom: calc(-0.6em - 6px);
+}
+#absorb{
+	background-image: url(../../../../Images/Absolver/UI/Game/absorb.png);
+	padding: 0.6em;
+	margin: -0.6em;
+	margin-bottom: calc(-0.6em - 6px);
+}
+#guardbreack{
+	background-image: url(../../../../Images/Absolver/UI/Game/guardbreack.png);
+	padding: 0.6em;
+	margin: -0.6em;
+	margin-bottom: calc(-0.6em - 6px);
+}

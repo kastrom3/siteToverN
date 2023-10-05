@@ -1,14 +1,31 @@
 * {
-	--image: url(../../../Images/Absolver/background_CosmicLatte.jpg);
-	--sprt: url(../../../Images/Absolver/Dlisting_separator.png);
+	--image: url(../../../Images/Absolver/UI/background_CosmicLatte.jpg);
+	--sprt: url(../../../Images/Absolver/UI/Dlisting_separator.png);
 	--color:#000;
 	--color2:#73a4a4;
-	--ico: url(../../../Images/Absolver/list-style-L.png);
+	--ico: url(../../../Images/Absolver/UI/list-style-L.png);
 	--Color: #f5f5f5;
 	--Color2: #fff;
 	--p: #444;
 	--h2: #0a0a0a;
 	--a: #666;
+	--smartphoto: #f1f1df;
+}
+
+.smartphoto-header{
+	background: linear-gradient(#fff9 60%, #0000);
+}
+
+.smartphoto-dismiss{
+	filter: invert(0);
+}
+
+.smartphoto-arrow-left, .smartphoto-arrow-right{
+	background:  radial-gradient(circle, #f1f1dfff 0%, #f1f1df00 75%);
+}
+
+.smartphoto-arrow-left a, .smartphoto-arrow-right a{
+	filter: invert(0);
 }
 
 .switcher__radio {

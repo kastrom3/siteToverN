@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link rel="shortcut icon" href="../../../Images/Absolver/favicon.png" type="image/png">
+		<title>Absolver Projects</title>
+		<meta name="description" content="Absolver Projects by ToverN Grup">
+		<meta name="keywords" content="ToverN, ToverN Grup, Absolver, Projects, Works">
+		
+		<script>
+			if (matchMedia('(prefers-color-scheme: dark)').media === 'not all') {
+				document.documentElement.style.display = 'none';
+				document.head.insertAdjacentHTML(
+					'beforeend',
+					'<link rel="stylesheet" href="../styles/light.css" onload="document.documentElement.style.display=\'\'">'
+				);
+			}
+		</script>
+
+		<link rel="stylesheet" href="../styles/light.css" media="(prefers-color-scheme: light)">
+		<link rel="stylesheet" href="../styles/dark.css" media="(prefers-color-scheme: dark)">
+		<link rel="stylesheet" href="../styles/index.css">
+		<style>#i p{margin-block: -6px;}</style>
+	</head>
+	<body>
+		<header>
+			<a href="../"><img src="../../../Images/Absolver/UI/arrow_right.png" style="transform: rotateY(180deg);"></a>
+			<fieldset class="switcher">
+				<input class="switcher__radio switcher__radio--light" type="radio" name="color-scheme" value="light" aria-label="Light">
+				<input class="switcher__radio switcher__radio--auto" type="radio" name="color-scheme" value="auto" aria-label="System" checked>
+				<input class="switcher__radio switcher__radio--dark" type="radio" name="color-scheme" value="dark" aria-label="Dark">
+				<div class="switcher__status"></div>
+			</fieldset>
+		</header>
+		<main style="padding-top: 90px;">
+			<div id="C">
+				<div id="IT">
+					<a id="i" href="#1"><img src="../../../Images/Absolver/News/Etheran.jpg"><p>Absolvered ideas</p></a>
+					<a id="i" href="#2"><img src="../../../Images/Absolver/News/Absolver_Wiki.jpg"><p>Absolver Wiki</p></a>
+					<a id="i" href="#3"><img src="../../../Images/Absolver/News/fontfon.jpg"><p>Absolver font</p></a>
+					<a id="i" href="Mods"><img src="../../../Images/Absolver/News/Mods_ToverN.jpg"><p>Mods</p></a>
+					<a id="i" href="#4"><img src="../../../Images/Absolver/News/Newfon.jpg"><p>Research</p></a>
+					<a id="i" href="#5"><img src="../../../Images/Absolver/News/Newfon.jpg"><p>Art & renders</p></a>
+				</div>
+				<div class="block" id="1">
+					<a class="block-close" href="#"></a>
+					<iframe src="AbsIdea.html" width="100%" height="100%"></iframe>
+				</div>
+				<div class="block" id="2">
+					<a class="block-close" href="#"></a>
+					<iframe src="Wiki.html" width="100%" height="100%"></iframe>
+				</div>
+				<div class="block" id="3">
+					<a class="block-close" href="#"></a>
+					<iframe src="Font.html" width="100%" height="100%"></iframe>
+				</div>
+				<div class="block" id="4">
+					<a class="block-close" href="#"></a>
+					<iframe src="Research.html" width="100%" height="100%"></iframe>
+				</div>
+				<div class="block" id="5">
+					<a class="block-close" href="#"></a>
+					<iframe src="Art.html" width="100%" height="100%"></iframe>
+				</div>
+			</div>
+		</main>
+		<script src="../index.js"></script>
+		<footer>
+			<iframe src="../footer.html"></iframe>
+		</footer>
+	</body>
+</html>

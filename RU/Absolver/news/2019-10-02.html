@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<link rel="shortcut icon" href="../../../Images/Absolver/favicon.png" type="image/png">
+	<title>Тех. работы серверов</title>
+	<meta name="description" content="Отключение серверов на тех. обслуживание.">
+	<meta name="keywords" content="ToverN, ToverN Grup, Absolver, Новости">
+	<script>
+		if (matchMedia('(prefers-color-scheme: dark)').media === 'not all') {
+			document.documentElement.style.display = 'none';
+			document.head.insertAdjacentHTML(
+				'beforeend',
+				'<link rel="stylesheet" href="../styles/light.css" onload="document.documentElement.style.display=\'\'">'
+				);
+			}
+	</script>
+
+	<link rel="stylesheet" href="../styles/light.css" media="(prefers-color-scheme: light)">
+	<link rel="stylesheet" href="../styles/dark.css" media="(prefers-color-scheme: dark)">
+	<link rel="stylesheet" href="../styles/index.css">
+</head>
+<body>
+	<header>
+		<a href="../news"><img src="../../../Images/Absolver/UI/arrow_right.png" style="transform: rotateY(180deg);"></a>
+		<fieldset class="switcher">
+			<input class="switcher__radio switcher__radio--light" type="radio" name="color-scheme" value="light" aria-label="Светлая">
+			<input class="switcher__radio switcher__radio--auto" type="radio" name="color-scheme" value="auto" aria-label="Системная" checked>
+			<input class="switcher__radio switcher__radio--dark" type="radio" name="color-scheme" value="dark" aria-label="Тёмная">
+			<div class="switcher__status"></div>
+		</fieldset>
+		<script src="../index.js"></script>
+	</header>
+	<main>
+		<div id="C" style="padding-top: 75px;">
+			<time datetime="2019-10-02">2019.10.02</time>
+			<p>Так пока-что "буря" обходит нас стороной:</p>
+			
+			<blockquote class="twitter-tweet" align="center">
+				<p lang="en" dir="ltr">Absolver servers will be down for maintenance operations at 12:00 noon GMT, for about an hour. Sorry for the inconvenience!</p>&mdash; Absolver (@Absolver) <a href="https://twitter.com/Absolver/status/1179344061272076291?ref_src=twsrc%5Etfw">October 2, 2019</a>
+				<p>Если вы видите этот текст значит Твитер по какой-то причине не доступен</p>
+			</blockquote>
+			<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+			<p>Перевод: Сервера Absolver будут отключены на обслуживание в 12:00 по GMT, примерно на час. Приносим извинения за недобства! </p>
+		</div>
+	</main>
+	<footer>
+		<iframe src="../footer.html"></iframe>
+	</footer>
+</body>
+</html>

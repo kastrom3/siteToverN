@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<link rel="shortcut icon" href="../../../Images/Absolver/favicon.png" type="image/png">
+	<title>Результаты Турнира EU & NA</title>
+	<meta name="description" content="Победителем Турнира Absolver EU стал: xNeiral, а Absolver NA стал: farron">
+	<meta name="keywords" content="ToverN, ToverN Grup, Absolver, Новости">
+	<script>
+		if (matchMedia('(prefers-color-scheme: dark)').media === 'not all') {
+			document.documentElement.style.display = 'none';
+			document.head.insertAdjacentHTML(
+				'beforeend',
+				'<link rel="stylesheet" href="../styles/light.css" onload="document.documentElement.style.display=\'\'">'
+				);
+			}
+	</script>
+
+	<link rel="stylesheet" href="../styles/light.css" media="(prefers-color-scheme: light)">
+	<link rel="stylesheet" href="../styles/dark.css" media="(prefers-color-scheme: dark)">
+	<link rel="stylesheet" href="../styles/index.css">
+</head>
+<body>
+	<header>
+		<a href="../news"><img src="../../../Images/Absolver/UI/arrow_right.png" style="transform: rotateY(180deg);"></a>
+		<fieldset class="switcher">
+			<input class="switcher__radio switcher__radio--light" type="radio" name="color-scheme" value="light" aria-label="Светлая">
+			<input class="switcher__radio switcher__radio--auto" type="radio" name="color-scheme" value="auto" aria-label="Системная" checked>
+			<input class="switcher__radio switcher__radio--dark" type="radio" name="color-scheme" value="dark" aria-label="Тёмная">
+			<div class="switcher__status"></div>
+		</fieldset>
+		<script src="../index.js"></script>
+	</header>
+	<main>
+		<div id="C" style="padding-top: 75px;">
+			<time datetime="2020-09-30">2020.09.30</time>
+			<hr>
+			<h2>Результаты турнира Absolver Европы</h2>
+			<hr>
+			<p>
+				Победителем Турнира Absolver EU стал: <b>xNeiral</b><br>
+				Второе место занял: <b>Erronlol</b><br>
+				Третье место занял: <b>BestPlebEu</b>
+			</p>
+			<iframe src="https://challonge.com/ru/oc4u62a6/module" width="100%" height="500" frameborder="0" scrolling="auto" allowtransparency="true"></iframe>
+			<h3>Запись Турнира</h3>
+			<div id="video">
+				<iframe src="https://www.youtube.com/embed/videoseries?list=PLqf7wJllFWxjm9wsGJeY9lgvrh_Y4mJoE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+			</div>
+			<cite>Источники: <a href="https://challonge.com/ru/oc4u62a6" target="_blank">первый</a>, <a href="https://www.reddit.com/r/absolver/comments/iwytc0/all_fight_from_the_eu_pc_tournament/" target="_blank">второй</a>.</cite>
+			<hr>
+			<h2>Результаты турнира Absolver северной Америки</h2>
+			<hr>
+			<p>
+				Победителем Турнира Absolver NA стал: <b>farron</b><br>
+				Второе место занял: <b>Alemimo</b><br>
+				Третье место занял: <b>El_Tenedor</b>
+			</p>
+			<iframe src="https://challonge.com/ru/qu8275h8/module" width="100%" height="500" frameborder="0" scrolling="auto" allowtransparency="true"></iframe>
+			<h3>Запись Турнира</h3>
+			<div id="video">
+				<iframe src="https://www.youtube.com/embed/videoseries?list=PLrMohuqPyCxjJepMmmnaB-UICYPl_Y1at" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+			</div>
+			<cite>Источники: <a href="https://challonge.com/ru/qu8275h8" target="_blank">первый</a>, <a href="https://www.reddit.com/r/absolver/comments/j2fmqx/been_having_a_real_rough_go_of_quarantine_but_i/" target="_blank">второй</a>.</cite>
+		</div>
+	</main>
+	<footer>
+		<iframe src="../footer.html"></iframe>
+	</footer>
+</body>
+</html>

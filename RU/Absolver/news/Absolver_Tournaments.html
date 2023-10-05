@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<link rel="shortcut icon" href="../../../Images/Absolver/favicon.png" type="image/png">
+	<title>Новости по турнирам Absolver</title>
+	<meta name="description" content="Все записи боёв Европейского турнира. + Анонс Азиатского турнира!">
+	<meta name="keywords" content="ToverN, ToverN Grup, Absolver, Новости">
+	<script>
+		if (matchMedia('(prefers-color-scheme: dark)').media === 'not all') {
+			document.documentElement.style.display = 'none';
+			document.head.insertAdjacentHTML(
+				'beforeend',
+				'<link rel="stylesheet" href="../styles/light.css" onload="document.documentElement.style.display=\'\'">'
+				);
+			}
+	</script>
+
+	<link rel="stylesheet" href="../styles/light.css" media="(prefers-color-scheme: light)">
+	<link rel="stylesheet" href="../styles/dark.css" media="(prefers-color-scheme: dark)">
+	<link rel="stylesheet" href="../styles/index.css">
+</head>
+<body>
+	<header>
+		<a href="../news"><img src="../../../Images/Absolver/UI/arrow_right.png" style="transform: rotateY(180deg);"></a>
+		<fieldset class="switcher">
+			<input class="switcher__radio switcher__radio--light" type="radio" name="color-scheme" value="light" aria-label="Светлая">
+			<input class="switcher__radio switcher__radio--auto" type="radio" name="color-scheme" value="auto" aria-label="Системная" checked>
+			<input class="switcher__radio switcher__radio--dark" type="radio" name="color-scheme" value="dark" aria-label="Тёмная">
+			<div class="switcher__status"></div>
+		</fieldset>
+		<script src="../index.js"></script>
+	</header>
+	<main>
+		<div id="C" style="padding-top: 75px;">
+			<time datetime="2020-09-23">2020.09.23</time>
+			<h2>Новости по турнирам Absolver</h2>
+			<p>Тэкс... <a href="https://www.reddit.com/r/absolver/comments/iwytc0/all_fight_from_the_eu_pc_tournament/" target="_blank">Все записи боёв Европейского турнира</a> вышли ещё 2 дня назад, я собирался опубликовать их вместе с записими боёв Американского турнира. Однако они ещё небыли опубликованы.</p>
+			<p>Но тут вышла ещё одна новость, так-что решил тут про неё рассказать!</p>
+			<p>И это <a href="https://www.reddit.com/r/absolver/comments/ixvaov/the_absolver_asia_tournament/" target="_blank">Азиатский турнир</a>! Да теперь они решили провести турнир на серверах Азии. И даже трейлер сделали!</p>
+			<div id="video">
+				<iframe src="https://www.youtube.com/embed/GzxWtvFos1c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+			</div>
+			<p>Если надо могу всё перевести!</p>
+			<p>И да результаты турниров с записими боёв я опубликую, как только появятся записи Американского турнира! Так-что подождите)</p>
+		</div>
+	</main>
+	<footer>
+		<iframe src="../footer.html"></iframe>
+	</footer>
+</body>
+</html>

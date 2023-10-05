@@ -2,13 +2,22 @@
 
 body {
 	display: grid;
-	font-family: 'Press Start 2P', cursive;
-	font-size: 15pt;
+	image-rendering: pixelated;
+	font-family: 'Press Start 2P';
+	line-height: 150%;
 	margin: 0;
+}
+
+h1{
+	text-align:center;
+	font-weight: 800;
+	font-size: 45px;
 }
 
 h2{
 	text-align:center;
+	font-weight: 800;
+	font-size: 30px;
 }
 
 a {
@@ -19,24 +28,16 @@ iframe{
 	border: 0px;
 }
 
-#fon {
+#fon{
 	background-position: center top;
 	background-attachment: fixed;
 }
 
-#con {
+main{
 	width: 100%;
 }
 
 @media (min-width: 1200px) {
-	#L {
-		float: left;
-		width: 20%;
-	}
-	#R {
-		float: right;
-		width: 20%;
-	}
 	#C {
 		margin: 0 20% 0 20%;
 	}
@@ -49,26 +50,16 @@ iframe{
 	}
 }
 
-@media (min-width: 708px) {
-	.R2, .L2{
-		float: left;
-	}
-	.L2{
-		width: 30%;
-	}
-	.R2{
-		width: 70%;
-	}
-}
-
-#footer{
+footer{
+    display: flex;
+    align-items: flex-end;
 	background: url(Images/footer.png);
 	background-color: #bef5ff;
 	background-size: cover;
     background-position-x: 50%;
 	width: 100%;
 	height: 300px;
-	color:#f5f9cc;
+	color:#ff8500;
 }
 
 .col-R, .col-L{
@@ -76,6 +67,10 @@ iframe{
 	padding-left: 15px;
 	padding-right: 15px;
 	box-sizing: border-box;
+}
+
+.col-R img, .col-L img{
+	width: 64px;
 }
 
 @media (min-width: 708px){

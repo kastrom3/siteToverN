@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<link rel="shortcut icon" href="../../../Images/Absolver/favicon.png" type="image/png">
+	<title>Анонс Зимнего обновления</title>
+	<meta name="description" content="Наконец появились первые известия про грядущее Зимнее обновление!">
+	<meta name="keywords" content="ToverN, ToverN Grup, Absolver, Новости">
+	<script>
+		if (matchMedia('(prefers-color-scheme: dark)').media === 'not all') {
+			document.documentElement.style.display = 'none';
+			document.head.insertAdjacentHTML(
+				'beforeend',
+				'<link rel="stylesheet" href="../styles/light.css" onload="document.documentElement.style.display=\'\'">'
+				);
+			}
+	</script>
+
+	<link rel="stylesheet" href="../styles/light.css" media="(prefers-color-scheme: light)">
+	<link rel="stylesheet" href="../styles/dark.css" media="(prefers-color-scheme: dark)">
+	<link rel="stylesheet" href="../styles/index.css">
+</head>
+<body>
+	<header>
+		<a href="../news"><img src="../../../Images/Absolver/UI/arrow_right.png" style="transform: rotateY(180deg);"></a>
+		<fieldset class="switcher">
+			<input class="switcher__radio switcher__radio--light" type="radio" name="color-scheme" value="light" aria-label="Светлая">
+			<input class="switcher__radio switcher__radio--auto" type="radio" name="color-scheme" value="auto" aria-label="Системная" checked>
+			<input class="switcher__radio switcher__radio--dark" type="radio" name="color-scheme" value="dark" aria-label="Тёмная">
+			<div class="switcher__status"></div>
+		</fieldset>
+		<script src="../index.js"></script>
+	</header>
+	<main>
+		<div id="C" style="padding-top: 75px;">
+			<time datetime="2019-02-02">2019.02.02</time>
+			<p>Наконец появились первые известия про грядущее "Зимнее обновление": </p>
+			<blockquote class="twitter-tweet" align="center">
+				<p lang="en" dir="ltr">Winter Update is just around the corner! We&#39;ve fixed the main bugs that had been identified, and are now running final tests to make sure the version is rock-solid! The update should be released in a few days now, sorry for the delay and thank you all for your patience!</p>&mdash; Absolver (@Absolver) <a href="https://twitter.com/Absolver/status/1091022864126566402?ref_src=twsrc%5Etfw">January 31, 2019</a>
+				<p>Если вы видите этот текст значит Твитер по какой-то причине не доступен</p>
+			</blockquote>
+			<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+			<p>Перевод: Зимнее обновление не за горами! Мы исправили основные обнаруженные ошибки и сейчас выполняем финальные тесты, чтобы убедиться, что версия надежна! Обновление должно быть выпущено через несколько дней, извините за задержку и спасибо всем за терпение!</p>
+		</div>
+	</main>
+	<footer>
+		<iframe src="../footer.html"></iframe>
+	</footer>
+</body>
+</html>
