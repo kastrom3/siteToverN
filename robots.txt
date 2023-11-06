@@ -27,3 +27,4 @@ Disallow: /EN/Absolver/AbsolverWorldMap/Info.html
 Disallow: /EN/Absolver/footer.html
 Disallow: /LonaRPG/mods.html
 Disallow: /LonaRPG/links.html
+Disallow: /.well-known/
