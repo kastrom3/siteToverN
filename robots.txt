@@ -7,6 +7,7 @@ Disallow: /RU/Absolver/projects/Research.html
 Disallow: /RU/Absolver/projects/Wiki.html
 Disallow: /RU/Absolver/projects/Mods/Cinematic.html
 Disallow: /RU/Absolver/projects/Mods/NoNPC.html
+Disallow: /RU/Absolver/projects/Mods/Rift-Money.html
 Disallow: /RU/Absolver/projects/Mods/Resolver/ChagelogB-1-0.html
 Disallow: /RU/Absolver/AbsolverWorldMap/index.html
 Disallow: /RU/Absolver/AbsolverWorldMap/Info.html
@@ -21,6 +22,7 @@ Disallow: /EN/Absolver/projects/Research.html
 Disallow: /EN/Absolver/projects/Wiki.html
 Disallow: /EN/Absolver/projects/Mods/Cinematic.html
 Disallow: /EN/Absolver/projects/Mods/NoNPC.html
+Disallow: /EN/Absolver/projects/Mods/Rift-Money.html
 Disallow: /EN/Absolver/projects/Mods/Resolver/ChagelogB-1-0.html
 Disallow: /EN/Absolver/AbsolverWorldMap/index.html
 Disallow: /EN/Absolver/AbsolverWorldMap/Info.html
