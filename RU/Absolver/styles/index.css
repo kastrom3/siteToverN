@@ -205,10 +205,6 @@ iframe{
 	border: 0px;
 }
 
-tr{
-	vertical-align: top;
-}
-
 hr{/* Линия для разрыва текста */
 	background-image: var(--sprt);
 	background-size: 100%;
