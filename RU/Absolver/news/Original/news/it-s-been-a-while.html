@@ -1,60 +1,103 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta name="theme-color" content="#ffffff" />
+		<link rel="shortcut icon" href="../../../../../Images/Absolver/favicon.png" type="image/png">
+		<title>Прошло много времени!</title>
+		<meta name="description" content="Наконец появились первые известия про грядущее Зимнее обновление!">
+		<meta name="keywords" content="ToverN, ToverN Grup, Absolver, Новости">
+		<script>
+			if (matchMedia('(prefers-color-scheme: dark)').media === 'not all') {
+				document.documentElement.style.display = 'none';
+				document.head.insertAdjacentHTML(
+					'beforeend',
+					'<link rel="stylesheet" href="../styles/light.css" onload="document.documentElement.style.display=\'\'">'
+					);
+				}
+		</script>
 
-		<link href="https://www.absolvergame.com/dist/app.css?v=0.2.12" media="all" rel="stylesheet" />
+		<link rel="stylesheet" href="../../../../../SmartPhoto/css/smartphoto.min.css">
+		<link rel="stylesheet" href="../../../styles/light.css" media="(prefers-color-scheme: light)">
+		<link rel="stylesheet" href="../../../styles/dark.css" media="(prefers-color-scheme: dark)">
+		<link rel="stylesheet" href="../../../styles/index.css">
 		<style>
-			@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;800&display=swap');
-			body, .font-title, .font-text_light{
-				font-family: 'Rubik', sans-serif;
+			#slider{
+				display: flex;
+				height: 50vh;
+				overflow-x: scroll;
+				img{
+					height: calc(100% - 5px);
+					padding: 0 3px;
+				}
 			}
-			::-webkit-scrollbar{width: 8px; height: 8px;}
-			::-webkit-scrollbar-track{background: #666666;}
-			::-webkit-scrollbar-thumb{background: #c4c4c4;}
-			::-webkit-scrollbar-thumb:hover{background: #e6e6e6;}
+			time{
+				display: block;
+				padding: 8px 0 0;
+				font-size: 18px;
+			}
 		</style>
-
-		<title></title>
 	</head>
   <body id="main" class="js-body news">
-  <article class="news-article news-single">
-        <header>
-      <img class="news-article__thumbnail c-1block-news__image" src="https://absolvergame.com/media/8qwzu7wtf222vr/source/IMG_0685.jpg" />
-    </header>
-        <div class="listing-wrapper">
-      <div class="news-article__title-link" href="it-s-been-a-while.html">
-        <h1 class="news-article__title font-title">It’s been a while!</h1>
-      </div>
-
-      <span class="news-article__date font-title">April 6, 2017</span>
-      <div class="news-article__body"><p>Hello Prospects, it’s been a while!</p>
-
-<p>2017 got off to a flying start at Sloclap, you may or may not be aware of this, but we ran our first Closed Alpha tests last month with selected community members. Our main goal was to perform our first stress test on our online servers. If you missed it, don’t worry, we just set up an Open Beta form, <a href="http://www.sloclap.com/absolver-beta/" title="Register">do not hesitate to register</a> :).</p>
-
-<p><img alt="Meditation" class="fcenter" src="../../sg-devolver-absolver.turbulent.ca/media/kowfgverb3wjlr/source/Meditation_6MO_15FPS.gif" title="Meditation" /></p>
-
-<p>We also got the chance to display Absolver on a wonderful booth at this year’s <span class="caps">PAX</span> East, you can check out the pictures below. Thanks to everyone who waited in line to play Absolver, we were thrilled to be able to talk directly to our players!</p>
-
-<p><img alt="Our Booth" class="fcenter" src="../../sg-devolver-absolver.turbulent.ca/media/w7dwf0ethgt4br/800x468/PAX_2017-7.jpg" title="Our Booth" /></p>
-
-<p><img alt="Players playing Absolver at PAX" class="fcenter" src="../../sg-devolver-absolver.turbulent.ca/media/8qwzu7wtf222vr/800x468/IMG_0685.jpg" title="Players playing Absolver at PAX" /></p>
-
-<p><img alt="Playing stations with Masks" class="fcenter" src="../../sg-devolver-absolver.turbulent.ca/media/jbilsmv3ipzcrr/800x468/PAX_booth.jpg" title="Playing stations with Masks" /></p>
-
-<p>To conclude on this post, I will leave you to a 15min video of our <span class="caps">PAX</span> walkthrough, with developer commentary:</p>
-
-<p><iframe width="560" height="315" src="https://www.youtube.com/embed/UZDNwQIYtAM" frameborder="0" allowfullscreen></iframe></p></div>       
-    </div>
-  </article>
-  
-    <div class="news-single__back-link">
-      <div class="listing-wrapper">
-        <a href="../news.html" class="news-single__back-link-inner font-title">
-          <svg class="icon"><use xlink:href="../dist/sprite.symbols.svg#icon_arrow_double" /></svg>
-          Все новости Абзолвера
-        </a>
-      </div>
-    </div>
+	<header>
+		<a href="../news"><img src="../../../../../Images/Absolver/UI/arrow_right.png" style="transform: rotateY(180deg);"></a>
+		<fieldset class="switcher">
+			<input class="switcher__radio switcher__radio--light" type="radio" name="color-scheme" value="light" aria-label="Светлая">
+			<input class="switcher__radio switcher__radio--auto" type="radio" name="color-scheme" value="auto" aria-label="Системная" checked>
+			<input class="switcher__radio switcher__radio--dark" type="radio" name="color-scheme" value="dark" aria-label="Тёмная">
+			<div class="switcher__status"></div>
+		</fieldset>
+		<script src="../../../index.js"></script>
+	</header>
+	<main>
+        <img class="news-article__thumbnail c-1block-news__image" src="../../../../../Images/Absolver/SloClap/Its-been-a-while/IMG_0685.jpg" width="100%">
+		<div id="C">
+			<div class="news-article__title-link" href="it-s-been-a-while.html">
+				<h1>Прошло много времени!</h1>
+			  </div>
+			  <time datetime="2017-04-06">6 апреля 2017</time>
+				<div class="news-article__body">
+					<p>Здравствуйте претенденты, прошло много времени!</p>
+		
+					<p>2017 год для Sloclap начался очень успешно, вы могли знать об этом, а могли и не знать, но в прошлом месяце мы провели наши первые закрытые альфа-тесты с избранными членами сообщества. Нашей главной целью было провести первый стресс-тест на наших онлайн-серверах. Если вы это пропустили, то не волнуйтесь, мы только что создали форму открытого бета-тестирования, <q>не стесняйтесь зарегистрироваться</q> :).</p>
+					<img alt="Meditation" id="center" src="../../../../../Images/Absolver/SloClap/Its-been-a-while/Meditation_6MO_15FPS.gif">
+					<p>У нас также была возможность представить Absolver в прекрасном стенде на выставке PAX East в этом году, вы можете посмотреть фотографии ниже. Спасибо всем, кто стоял в очереди, чтобы сыграть в Absolver, мы были очень рады возможности напрямую поговорить с нашими игроками!</p>
+					<div id="slider">
+						<a href="../../../../../Images/Absolver/SloClap/Its-been-a-while/PAX_2017-7.jpg" class="js-img-viewer"><img alt="Our Booth" src="../../../../../Images/Absolver/SloClap/Its-been-a-while/PAX_2017-7.jpg"></a>
+						<a href="../../../../../Images/Absolver/SloClap/Its-been-a-while/IMG_0685.jpg" class="js-img-viewer"><img alt="Players playing Absolver at PAX" src="../../../../../Images/Absolver/SloClap/Its-been-a-while/IMG_0685.jpg"></a>
+						<a href="../../../../../Images/Absolver/SloClap/Its-been-a-while/PAX_booth.jpg" class="js-img-viewer"><img alt="Playing stations with Masks" src="../../../../../Images/Absolver/SloClap/Its-been-a-while/PAX_booth.jpg"></a>
+						<a href="../../../../../Images/Absolver/SloClap/Its-been-a-while/C6f6RqRVQAAg4CE.jpg" class="js-img-viewer"><img alt="Our Booth" src="../../../../../Images/Absolver/SloClap/Its-been-a-while/C6f6RqRVQAAg4CE.jpg"></a>
+						<a href="../../../../../Images/Absolver/SloClap/Its-been-a-while/C6kHEQ7WkAM6zTp.jpg" class="js-img-viewer"><img alt="Players playing Absolver at PAX" src="../../../../../Images/Absolver/SloClap/Its-been-a-while/C6kHEQ7WkAM6zTp.jpg"></a>
+						<a href="../../../../../Images/Absolver/SloClap/Its-been-a-while/C6kHERBXAAEYpGf.jpg" class="js-img-viewer"><img alt="Playing stations with Masks" src="../../../../../Images/Absolver/SloClap/Its-been-a-while/C6kHERBXAAEYpGf.jpg"></a>
+					</div>
+		
+					<p>В завершение этого поста я оставлю вам 15-минутное видео прохождения нашего PAX с комментариями разработчиков:</p>
+		
+					<div id="video">
+						<iframe src="https://www.youtube.com/embed/UZDNwQIYtAM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+					</div>
+				</div>       
+			</div>
+		  </article>
+		  
+			<div class="news-single__back-link">
+			  <div class="listing-wrapper">
+				<a href="../news.html" class="news-single__back-link-inner font-title">
+				  <svg class="icon"><use xlink:href="../dist/sprite.symbols.svg#icon_arrow_double" /></svg>
+				  Все новости Абзолвера
+				</a>
+			</div>
+		</div>
+		</div>
+		<script src="../../../../../SmartPhoto/js/smartphoto.js?v=1"></script>
+		<script>
+			document.addEventListener('DOMContentLoaded',function(){
+				const sm = new SmartPhoto(".js-img-viewer", {
+					showAnimation: false
+				});
+			});
+		</script>
+	</main>
+	<footer>
+		<iframe src="../../../footer.html"></iframe>
+	</footer>
   </body>
 </html>

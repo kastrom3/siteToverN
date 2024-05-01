@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<link rel="shortcut icon" href="../../../Images/Absolver/favicon.png" type="image/png">
+	<title>New Weight System</title>
+	<meta name="description" content="Спустя множество времени сайт был наконец обновлён и доработан. Однако по мимо этого ToverN Grup уже официально и открыто врывается в модовую гонку! Подробности читайте в этом посте!">
+	<meta name="keywords" content="ToverN, ToverN Grup, Absolver, Новости">
+	<script>
+		if (matchMedia('(prefers-color-scheme: dark)').media === 'not all') {
+			document.documentElement.style.display = 'none';
+			document.head.insertAdjacentHTML(
+				'beforeend',
+				'<link rel="stylesheet" href="../styles/light.css" onload="document.documentElement.style.display=\'\'">'
+				);
+			}
+	</script>
+
+	<link rel="stylesheet" href="../../../SmartPhoto/css/smartphoto.min.css">
+	<link rel="stylesheet" href="../styles/light.css" media="(prefers-color-scheme: light)">
+	<link rel="stylesheet" href="../styles/dark.css" media="(prefers-color-scheme: dark)">
+	<link rel="stylesheet" href="../styles/index.css">
+</head>
+<body>
+	<header>
+		<a href="../news"><img src="../../../Images/Absolver/UI/arrow_right.png" style="transform: rotateY(180deg);"></a>
+		<fieldset class="switcher">
+			<input class="switcher__radio switcher__radio--light" type="radio" name="color-scheme" value="light" aria-label="Светлая">
+			<input class="switcher__radio switcher__radio--auto" type="radio" name="color-scheme" value="auto" aria-label="Системная" checked>
+			<input class="switcher__radio switcher__radio--dark" type="radio" name="color-scheme" value="dark" aria-label="Тёмная">
+			<div class="switcher__status"></div>
+		</fieldset>
+		<script src="../index.js"></script>
+	</header>
+	<div id="fonf" style="background-image: url(../../../Images/Absolver/FAQ_Full.jpg);">
+		<h1>New Weight System</h1>
+	</div>
+	<main>
+		<div id="C">
+			<time datetime="2024-04-30">2024.04.30</time>
+			<p>In this article I describe the principle of calculating new weight for equipment in the Resolver mod. You can read more about the study results <a href="https://docs.google.com/spreadsheets/d/1GAJdBlczI0tcV4ZC50soKKjN1fx9R4VZommKoXuh0Nk/edit?usp=sharing" target="_blank">here</a></p>
+			<hr>
+			<p>In order to properly rebalance the weight of all items, I decided not to just estimate that <q>“this item is lighter than that, and that one is lighter than that”</q>, but to calculate the real weight of each item and then, if necessary, adapt them to the game.</p>
+			<h3>Weight calculation</h3>
+			<p>
+				So let's remember a little physics. How is mass calculated:<br>
+				</p><xmp style="font-size: 30px;">m=V*ρ</xmp>
+				where m - mass, V - volume, and ρ - density. <br>
+				That is, to find out the weight of each object, it is enough to know its volume and density. The first can be obtained in Blender by enabling the built-in <a href="../../../Images/Absolver/News/img/blender.jpg" class="js-img-viewer" data-group="nogroup" data-id="0" data-index="0">3D Print Toolbox</a> plugin. And for the second one, I just scoured the Internet to get this table of densities:
+				<details>
+					<summary><font style="vertical-align: inherit;" class="">Table</summary>
+<xmp>Densities
+Bone			2 kg/m³			Silk fabric
+Essence*		300 kg/m³		  >Light translucent 0.060 kg/m²
+Wood			400-700 kg/m³		  >Plain with light sheen 0.100 kg/m²
+Gleam*		600 kg/m³		  >Dense almost glossy 0.120 kg/m²
+Ice			900 kg/m³		Cotton fabric
+Wax			970 kg/m3		  >Light translucent 0.070 kg/m²
+Tan leather		600-1200 kg/m3		  >Common 0.150 kg/m²
+Hard tanned leather	1000-1400 kg/m³		Linen cloth
+Ceramic			1800 kg/m³		  >Light 0.150 kg/m²
+Ivory			1850 kg/m³		  >Common 0.230 kg/m²
+Porcelain		2300 kg/m³		Jute fabric (sometimes + linen)
+Alabaster		2500 kg/m³		  >Mesh 0.190 kg/m²
+Glass			2500 kg/m³		  >Rough (there are small pores) 0.380 kg/m²
+Flint			2600 kg/m³		  >Dense 0.450 kg/m²
+Obsidian		2600 kg/m³		Woolly fabric
+Granite			2600 kg/m³	 	  >Light 0.210 kg/m²
+Sandstone		2225-2670 kg/m³		  >Light 0.360 kg/m²
+Quartzite		2680 kg/m³		  >Thick 0.600 kg/m²
+Marble			2700 kg/m³
+Limestone		800 - 2800 kg/m³	Papyrus 0.100 kg/m²
+Diorite			2720-2920 kg/m³		Parchment 0.150 kg/m²
+Jade			3000 kg/m³		Paper
+Titanium		4500 kg/m³		  >Common 0.090 kg/m²
+Steel/Iron		7800 kg/m³		  >Dense 0.120 kg/m²  
+Bronze			8700 kg/m³
+Copper			8900 kg/m³
+Silver			10500 kg/m³
+Lead			11300 kg/m³
+Gold			19300 kg/m³
+
+*density of Essence and Gleam is unknown and just taken from my head)))
+</xmp>
+				</details>
+			<p></p>
+			<p>Yes, for this it is also necessary to divide the model into parts where another material is used, and for fabrics and paper I simply calculated the surface <q>(removing extra polygons in advance, in some cases removing the volume of the model)</q>, and multiplied by the density in m².</p>
+			<p><b>Note! </b>All calculations are approximate, due to many factors: calculation of volume using Low Poly models, lack of accurate information about the materials used for some masks, materials baked into the texture were not always taken into account, etc.</p>
+			<h3>Adapting weight to game balance</h3>
+			<p>For adaptation, it is necessary that the real weight curve tends to the game weight curve, and the further the real value is from the game value, the more it should approach it. However, the adapted values must maintain proportions with other.</p>
+			<p>The most suitable result was obtained by taking the average between two values:</p>
+			<a href="../../../Images/Absolver/News/img/sr.png" class="js-img-viewer" data-group="nogroup" data-id="1" data-index="1"><img id="center" src="../../../Images/Absolver/News/img/sr.png"></a>
+			<p>But since heavy objects still remained very heavy, we had to average it again to the game indicators:</p>
+			<a href="../../../Images/Absolver/News/img/srsr.png" class="js-img-viewer" data-group="nogroup" data-id="2" data-index="2"><img id="center" src="../../../Images/Absolver/News/img/srsr.png"></a>
+			<p>I then lowered the values by 10% of the real value, which brought the heavy items even closer to the game value:</p>
+			<a href="../../../Images/Absolver/News/img/srsr-10.png" class="js-img-viewer" data-group="nogroup" data-id="3" data-index="3"><img id="center" src="../../../Images/Absolver/News/img/srsr-10.png"></a>
+			<p>And finally, I lowered the final values by 6% in order to bring the values closer to the game balance, but maintain the ratios:</p>
+			<a href="../../../Images/Absolver/News/img/srsr-10-6.png" class="js-img-viewer" data-group="nogroup" data-id="4" data-index="4"><img id="center" src="../../../Images/Absolver/News/img/srsr-10-6.png"></a>
+		</div>
+	</main>
+	<script src="../../../SmartPhoto/js/smartphoto.js?v=1"></script>
+	<script>
+		document.addEventListener('DOMContentLoaded',function(){
+			const sm = new SmartPhoto(".js-img-viewer", {
+				showAnimation: false
+			});
+			// sm.destroy();
+		});
+	</script>
+	<footer>
+		<iframe src="../footer.html"></iframe>
+	</footer>
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<link rel="shortcut icon" href="../../../Images/Absolver/favicon.png" type="image/png">
+	<title>Новая система веса</title>
+	<meta name="description" content="Спустя множество времени сайт был наконец обновлён и доработан. Однако по мимо этого ToverN Grup уже официально и открыто врывается в модовую гонку! Подробности читайте в этом посте!">
+	<meta name="keywords" content="ToverN, ToverN Grup, Absolver, Новости">
+	<script>
+		if (matchMedia('(prefers-color-scheme: dark)').media === 'not all') {
+			document.documentElement.style.display = 'none';
+			document.head.insertAdjacentHTML(
+				'beforeend',
+				'<link rel="stylesheet" href="../styles/light.css" onload="document.documentElement.style.display=\'\'">'
+				);
+			}
+	</script>
+
+	<link rel="stylesheet" href="../../../SmartPhoto/css/smartphoto.min.css">
+	<link rel="stylesheet" href="../styles/light.css" media="(prefers-color-scheme: light)">
+	<link rel="stylesheet" href="../styles/dark.css" media="(prefers-color-scheme: dark)">
+	<link rel="stylesheet" href="../styles/index.css">
+</head>
+<body>
+	<header>
+		<a href="../news"><img src="../../../Images/Absolver/UI/arrow_right.png" style="transform: rotateY(180deg);"></a>
+		<fieldset class="switcher">
+			<input class="switcher__radio switcher__radio--light" type="radio" name="color-scheme" value="light" aria-label="Светлая">
+			<input class="switcher__radio switcher__radio--auto" type="radio" name="color-scheme" value="auto" aria-label="Системная" checked>
+			<input class="switcher__radio switcher__radio--dark" type="radio" name="color-scheme" value="dark" aria-label="Тёмная">
+			<div class="switcher__status"></div>
+		</fieldset>
+		<script src="../index.js"></script>
+	</header>
+	<div id="fonf" style="background-image: url(../../../Images/Absolver/FAQ_Full.jpg);">
+		<h1>Новая система веса</h1>
+	</div>
+	<main>
+		<div id="C">
+			<time datetime="2024-04-30">2024.04.30</time>
+			<p>В этой статье я описываю принцип расчёта нового веса для экипировки в моде Resolver. Подробнее ознакомиться с результатами исследования можно <a href="https://docs.google.com/spreadsheets/d/1GAJdBlczI0tcV4ZC50soKKjN1fx9R4VZommKoXuh0Nk/edit?usp=sharing" target="_blank">здесь</a></p>
+			<hr>
+			<p>Что-бы нормально перебалансировать вес всех предметов, я решил не просто прикидывать что <q>"этот предмет легче этого, а вон тот легче того"</q>, а рассчитать реальный вес каждого предмета и потом при необходимости адаптировать их под игру.</p>
+			<h3>Вычисление веса</h3>
+			<p>
+				Итак немного вспомним физику. Как вычисляется масса:<br>
+				<xmp style="font-size: 30px;">m=V*ρ</xmp>
+				где m - масса, V - объём, а ρ - плотность<br>
+				То есть, что-бы узнать вес каждого предмета, достаточно узнать его объём и плотность. Первое можно получить в Blender включив встроенный плагин <a href="../../../Images/Absolver/News/img/blender.jpg" class="js-img-viewer">3D Print Toolbox</a>. А для второго я просто прошурстил интернет для получения вот такой таблицы плотностей:
+				<details>
+					<summary>Таблица</summary>
+<xmp>Плотности
+Кость			2 кг/м³			Шёлковая ткань
+Сущность*		300 кг/м³		  >Лёгкая полупрозрачная	0.060 кг/м²
+Дерево			400-700 кг/м³		  >Обычная с лёгким блеском	0.100 кг/м²
+Отблески*		600 кг/м³		  >Плотная почти глянцевая	0.120 кг/м²
+Лёд			900 кг/м³		Хлопковая ткань
+Воск			970 кг/м3		  >Лёгкая полупрозрачная	0.070 кг/м²
+Дублённая кожа		600-1200 кг/м³		  >Обычная			0.150 кг/м²
+Твёрдая дублённая кожа	1000-1400 кг/м³		Льняная ткань
+Керамика		1800 кг/м³		  >Лёгкая			0.150 кг/м²
+Слоновая кость		1850 кг/м³		  >Обычная			0.230 кг/м²
+Фарфор			2300 кг/м³		  Джутовая ткань (иногда + лён)
+Алебастр		2500 кг/м³		  >Сетчетая			0.190 кг/м²
+Стекло			2500 кг/м³		  >Грубая (есть небольшие поры)	0.380 кг/м²
+Кремень			2600 кг/м³		  >Плотная			0.450 кг/м²
+Обсидиан		2600 кг/м³		Шерстяная ткань
+Гранит			2600 кг/м³		  >Лёгкая			0.210 кг/м²
+Песчаник		2225—2670 кг/м³		  >Обычная			0.360 кг/м²
+Кварцит			2680 кг/м³		  >Толстая			0.600 кг/м²
+Мрамор			2700 кг/м³
+Известняк		800 - 2800 кг/м³	Папирус				0.100 кг/м²
+Диорит			2720-2920 кг/м³		Пергамент			0.150 кг/м²
+Нефрит			3000 кг/м³		Бумага
+Титан			4500 кг/м³		  >Обычная			0.090 кг/м²
+Сталь/Железо		7800 кг/м³		  >Плотная			0.120 кг/м²  
+Бронза			8700 кг/м³
+Медь			8900 кг/м³
+Серебро			10500 кг/м³
+Свинец			11300 кг/м³
+Золото			19300 кг/м³
+
+*плотность Сущности и отблесков неизвестна и просто взята из головы))
+</xmp>
+				</details>
+			</p>
+			<p>Да для этого необходимо так-же и разделять модель на части там где используется другой материал, а для тканей и бумаги я просто считал поверхность <q>(заранее удаляя лишние полигоны, в некоторых случаях убирая объём модели)</q>, и умножал на плотность в м².</p>
+			<p><b>Примечание!</b> Все расчёты приблизительные, по множеству факторов: вычисление объёма по Low Poly моделям, не имение точной информации об используемых материалов у некоторых масок, не всегда учитывались материалы запечённые в текстуре и т.д.</p>
+			<h3>Адаптирование веса под игровой баланс</h3>
+			<p>Для адаптации нужно что-бы кривая реального веса стремилась к кривой игрового, при этом чем дальше реальное значение находиться от игрового, тем сильнее оно должно приближаться к нему. Однако адаптированные значения должны сохранять соотношения с другими.</p>
+			<p>Наиболее подходящий результат дало получение среднего значения между двумя значениями:</p>
+			<a href="../../../Images/Absolver/News/img/sr.png" class="js-img-viewer"><img id="center" src="../../../Images/Absolver/News/img/sr.png"></a>
+			<p>Но поскольку тяжёлые предметы всё ещё остались очень тяжёлыми пришлось его ещё раз усреднить к игровым показателям:</p>
+			<a href="../../../Images/Absolver/News/img/srsr.png" class="js-img-viewer"><img id="center" src="../../../Images/Absolver/News/img/srsr.png"></a>
+			<p>Затем я понизил значения на 10% от реального значения, что ещё сильнее приблизило тяжёлые предметы к игровым:</p>
+			<a href="../../../Images/Absolver/News/img/srsr-10.png" class="js-img-viewer"><img id="center" src="../../../Images/Absolver/News/img/srsr-10.png"></a>
+			<p>И на конец итоговые значения опустил на 6%, что-бы приблизить значения к игровому балансу, но сохранить соотношения:</p>
+			<a href="../../../Images/Absolver/News/img/srsr-10-6.png" class="js-img-viewer"><img id="center" src="../../../Images/Absolver/News/img/srsr-10-6.png"></a>
+		</div>
+	</main>
+	<script src="../../../SmartPhoto/js/smartphoto.js?v=1"></script>
+	<script>
+		document.addEventListener('DOMContentLoaded',function(){
+			const sm = new SmartPhoto(".js-img-viewer", {
+				showAnimation: false
+			});
+			// sm.destroy();
+		});
+	</script>
+	<footer>
+		<iframe src="../footer.html"></iframe>
+	</footer>
+</body>
+</html>
