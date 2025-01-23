@@ -1,0 +1,132 @@
+article, aside, nav, main {
+    display: block;
+}
+
+h1, h2, h3{
+	text-align:initial;
+	font-size: 42px;
+}
+
+h2{
+	font-size: 33px;
+}
+
+a {
+	background-color: transparent;
+	-webkit-text-decoration-skip: objects
+}
+
+img {
+    border-style: none;
+}
+
+#video{
+	margin: 0 auto;
+	width: 60%;
+}
+
+#center, #video{
+    box-shadow: 0 0 30px 1px var(--sel);
+}
+
+.c-1block-news__image {
+    box-shadow: 0 0 30px 0 var(--sel);
+    width: 520px;
+    height: 314px;
+    object-fit: cover;
+}
+
+.listing-wrapper{
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+@media (max-width: 1200px){
+	.listing-wrapper{
+		margin: 0 15% 0 15%;
+	}
+}
+
+@media (min-width: 1200px){
+	.listing-wrapper{
+		margin: 0 30% 0 30%;
+	}
+}
+
+.news-listing__title .listing-wrapper {
+	height: 100%
+}
+
+.news-listing__title span {
+	position: relative;
+	top: 50%;
+	transform: translateY(-30%)
+}
+
+.news-article__title-link {
+    text-decoration: none;
+}
+
+.news-article__title-link .news-article__title {
+	margin: 48px 0 0;
+	transition: opacity .3s
+}
+
+.news-article__title-link:hover .news-article__title {
+	opacity: .7
+}
+
+time {
+    display: block;
+    padding: 8px 0 0;
+    font-size: 18px;
+	font-weight: normal;
+    text-transform: uppercase;
+}
+
+.news-article__thumbnail {
+	width: 100%;
+	height: auto;
+	margin: 19px 0 0;
+	line-height: 0
+}
+
+.news-article__thumbnail iframe {
+	width: 100%;
+	height: 448px
+}
+
+.news-article__excerpt {
+	padding: 19px 0 0;
+	margin: 0;
+	font-size: 18px;
+	line-height: 20px;
+}
+
+.news-article__link {
+	display: inline-block;
+	background-color: #4c4949;
+	line-height: 31px;
+	text-transform: uppercase;
+	margin: 21px 0 48px;
+	padding: 10px 27px;
+	font-size: 20px;
+	color: #f1f1df;
+	text-decoration: none;
+	transition: all .3s
+}
+
+.news-article__link svg.icon {
+	margin: 0 4px 0 0;
+	width: 17px;
+	height: 15px;
+	transition: all .3s
+}
+
+.news-article__link:hover {
+	color: #f5f9cc;
+}
+
+.news-article__link:hover svg.icon {
+	margin: 0 0 0 4px
+}

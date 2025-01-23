@@ -8,9 +8,9 @@
 	--Color2: #fff;
 	--p: #444;
 	--h2: #0a0a0a;
-	--a: #666;
-	--smartphoto: #f1f1df;
+	--smartphoto: #eed;
 	--code: #ddd;
+	--author: #09f;
 }
 
 .smartphoto-header{
@@ -22,7 +22,7 @@
 }
 
 .smartphoto-arrow-left, .smartphoto-arrow-right{
-	background:  radial-gradient(circle, #f1f1dfff 0%, #f1f1df00 75%);
+	background:  radial-gradient(circle, #eedf 0%, #f1f1df00 75%);
 }
 
 .smartphoto-arrow-left a, .smartphoto-arrow-right a{

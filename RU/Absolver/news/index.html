@@ -1,184 +1,188 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-	<link rel="shortcut icon" href="../../../Images/Absolver/favicon.png" type="image/png">
-	<title>Новости</title>
-	<meta name="description" content="Новости Absolver">
-	<meta name="keywords" content="ToverN, ToverN Grup, Absolver, Новости">
-	<script>
-		if (matchMedia('(prefers-color-scheme: dark)').media === 'not all') {
-			document.documentElement.style.display = 'none';
-			document.head.insertAdjacentHTML(
-				'beforeend',
-				'<link rel="stylesheet" href="../styles/light.css" onload="document.documentElement.style.display=\'\'">'
-				);
-			}
-	</script>
+	<head>
+		<link rel="shortcut icon" href="../../../Images/Absolver/favicon.png" type="image/png">
+		<title>Новости</title>
+		<meta name="description" content="Новости Absolver">
+		<meta name="keywords" content="ToverN, ToverN Grup, Absolver, Новости">
+		<script>
+			if (matchMedia('(prefers-color-scheme: dark)').media === 'not all') {
+				document.documentElement.style.display = 'none';
+				document.head.insertAdjacentHTML(
+					'beforeend',
+					'<link rel="stylesheet" href="../styles/light.css" onload="document.documentElement.style.display=\'\'">'
+					);
+				}
+		</script>
 
-	<link rel="stylesheet" href="../styles/light.css" media="(prefers-color-scheme: light)">
-	<link rel="stylesheet" href="../styles/dark.css" media="(prefers-color-scheme: dark)">
-	<link rel="stylesheet" href="../styles/index.css">
-</head>
-<body>
-	<header>
-		<a href="../"><img src="../../../Images/Absolver/UI/arrow_right.png" style="transform: rotateY(180deg);"></a>
-		<fieldset class="switcher">
-			<input class="switcher__radio switcher__radio--light" type="radio" name="color-scheme" value="light" aria-label="Светлая">
-			<input class="switcher__radio switcher__radio--auto" type="radio" name="color-scheme" value="auto" aria-label="Системная" checked>
-			<input class="switcher__radio switcher__radio--dark" type="radio" name="color-scheme" value="dark" aria-label="Тёмная">
-			<div class="switcher__status"></div>
-		</fieldset>
-		<script src="../index.js"></script>
-	</header>
-	<main style="padding-top: 75px;">
-		<div id="C">
-			<h1>Новости Absolver</h1>
-			<div id="IT"></div>
-				<a id="i" href="2024-09-28.html">
-					<img src="../../../Images/Sifu/conf.webp">
-					<p id="Top">Первые новости о новой игре от SloClap!</p>
+		<link rel="stylesheet" href="../styles/light.css" media="(prefers-color-scheme: light)">
+		<link rel="stylesheet" href="../styles/dark.css" media="(prefers-color-scheme: dark)">
+		<link rel="stylesheet" href="../styles/index.css">
+	</head>
+	<body>
+		<header>
+			<a href="../"><img src="../../../Images/Absolver/UI/arrow_right.png" style="transform: rotateY(180deg);"></a>
+			<fieldset class="switcher">
+				<input class="switcher__radio switcher__radio--light" type="radio" name="color-scheme" value="light" aria-label="Светлая">
+				<input class="switcher__radio switcher__radio--auto" type="radio" name="color-scheme" value="auto" aria-label="Системная" checked>
+				<input class="switcher__radio switcher__radio--dark" type="radio" name="color-scheme" value="dark" aria-label="Тёмная">
+				<div class="switcher__status"></div>
+			</fieldset>
+			<script src="../index.js"></script>
+		</header>
+		<main style="padding-top: 75px;">
+			<div id="C">
+				<h1>Новости Absolver</h1>
+				<div id="IT">
+				<a id="i" href="2025-01-23.html">
+					<img src="../../../Images/Rematch/241216_Icon.jpg">
+					<p id="Top">Rematсh выйдет этим летом! (но есть нюанс)</p>
 				</a>
-				<a id="i" href="New_Weight_System.html">
-					<img src="../../../Images/Absolver/Mods/Resolver_Icon.jpg">
-					<p>Новая система веса!</p>
-				</a>
-				<a id="i" href="New_Site.html">
-					<img src="../../../Images/Absolver/Mods/Resolver_Icon.jpg">
-					<p id="Top">Вместе с обновлением сайта, обновился и Resolver!</p>
-				</a>
-				<a id="i" href="Results_Tournament_Zruba.html">
-					<img src="../../../Images/Absolver/News/Zaruba.jpg">
-					<p>Результаты турнира Заруба!!!</p>
-				</a>
-				<a id="i" href="The_Jade_Festival_Tournament.html">
-					<img src="../../../Images/Absolver/Presskit/screen-story-5-thumb.jpg">
-					<p>Турнир Нефритового фестиваля</p>
-				</a>
-				<a id="i" href="Absolver_Mods.html">
-					<img src="../../../Images/Absolver/News/Absolver_Mods.jpg">
-					<p>Моды для Absolver!!</p>
-				</a>
-				<a id="i" href="2021-08-01.html">
-					<img src="../../../Images/Absolver/News/Newfon.jpg">
-					<p>Проблемы с серверами решены!</p>
-				</a>
-				<a id="i" href="2021-07-16.html">
-					<img src="../../../Images/Absolver/News/Newfon.jpg">
-					<p>Проблемы с серверами</p>
-				</a>
-				<a id="i" href="Absolver_Tournament_League_2021-Windfall.html">
-					<img src="../../../Images/Absolver/img464.jpg" style="object-position: 60% 50%;">
-					<p>Турнир EU - Windfall</p>
-				</a>
-				<a id="i" href="Tournament_OCE.html">
-					<img src="../../../Images/Absolver/img464.jpg" style="object-position: 60% 50%;">
-					<p>Новости по Турниру OCE</p>
-				</a>
-				<a id="i" href="2021-01-20.html">
-					<img src="../../../Images/Absolver/News/Newfon.jpg">
-					<p>Стрим Peeve 4</p>
-				</a>
-				<a id="i" href="Results_Tournament_Asia.html">
-					<img src="https://cdna.artstation.com/p/assets/images/images/012/211/952/4k/michel-donze-absolver-keyart-08.jpg">
-					<p>Результаты Турнира Asia</p>
-				</a>
-				<a id="i" href="Results_Tournaments_EU_NA.html">
-					<img src="https://cdna.artstation.com/p/assets/images/images/012/211/952/4k/michel-donze-absolver-keyart-08.jpg">
-					<p>Результаты Турнира EU & NA</p>
-				</a>
-				<a id="i" href="Tournament_Asia.html">
-					<img src="https://cdnb.artstation.com/p/assets/images/images/002/936/891/large/	victorien-berry-screenshot-fight01.jpg">
-					<p>Начало Турнира Absolver Asia</p>
-				</a>
-				<a id="i" href="Absolver_Tournaments.html">
-					<img src="../../../Images/Absolver/img464.jpg" style="object-position: 60% 50%;">
-					<p>Новости по турнирам Absolver</p>
-				</a>
-				<a id="i" href="2020-09-01.html">
-					<img src="../../../Images/Absolver/News/Newfon.jpg">
-					<p>Статистика онлайна</p>
-				</a>
-				<a id="i" href="Absolver_Tournaments_EU_NA.html">
-					<img src="https://cdna.artstation.com/p/assets/images/images/012/214/750/large/michel-donze-absolver-screenshot-05-fight.jpg">
-					<p>Турнир Absolver EU & NA</p>
-				</a>
-				<a id="i" href="Open_Letter_to_Absolver_Community.html">
-					<img src="../../../Images/Absolver/News/preview_abosoler.jpg">
-					<p id="Top">Открытое письмо сообществу Absolver</p>
-				</a>
-				<a id="i" href="2020-08-24.html">
-					<img src="../../../Images/Absolver/News/Newfon.jpg">
-					<p>Стрим Peeve 3</p>
-				</a>
-				<a id="i" href="2020-08-18.html">
-					<img src="../../../Images/Absolver/News/SRG.jpg">
-					<p>Special Reserve Games 2</p>
-				</a>
-				<a id="i" href="2020-08-16.html">
-					<img src="../../../Images/Absolver/News/Newfon.jpg">
-					<p>Стрим Peeve 2</p>
-				</a>
-				<a id="i" href="2020-08-14.html">
-					<img src="../../../Images/Absolver/News/Newfon.jpg">
-					<p>Стрим Peeve 1</p>
-				</a>
-				<a id="i" href="2020-08-01.html">
-					<img src="../../../Images/Absolver/News/SRG.jpg">
-					<p>Special Reserve Games 1</p>
-				</a>
-				<a id="i" href="2020-07-31.html">
-					<img src="../../../Images/Absolver/News/Deck2.jpg">
-					<p>Сайт с конструктором деки 2</p>
-				</a>
-				<a id="i" href="2020-07-24.html">
-					<img src="../../../Images/Absolver/News/Newfon.jpg">
-					<p>Фикс бага на Xbox</p>
-				</a>
-				<a id="i" href="2020-07-08.html">
-					<img src="../../../Images/Absolver/News/FanMap.jpg">
-					<p>Новая карта Илентии</p>
-				</a>
-				<a id="i" href="2020-04-17.html">
-					<img src="../../../Images/Absolver/News/Newfon.jpg">
-					<p>Бесплатные выходные</p>
-				</a>
-				<a id="i" href="2020-03-18.html">
-					<img src="../../../Images/Absolver/News/Deck1.jpg">
-					<p>Сайт с конструктором деки 1</p>
-				</a>
-				<a id="i" href="2020-03-14.html">
-					<img src="../../../Images/Absolver/News/Newfon.jpg">
-					<p>Пост сообщества 1</p>
-				</a>
-				<a id="i" href="2020-03-05.html">
-					<img src="../../../Images/Absolver/News/Comix.jpg">
-					<p>Комикс Absolver</p>
-				</a>
-				<a id="i" href="2019-10-02.html">
-					<img src="../../../Images/Absolver/News/Newfon.jpg">
-					<p>Тех. работы серверов</p>
-				</a>
-				<a id="i" href="2019-07-31.html">
-					<img src="../../../Images/Absolver/News/Newfon.jpg">
-					<p>Запоздавшие плохие новости</p>
-				</a>
-				<a id="i" href="2019-06-09.html">
-					<img src="../../../Images/Absolver/AbsolverWorldMap/FullMap+.jpg">
-					<p>Обновление офф. сайта</p>
-				</a>
-				<a id="i" href="2019-02-02.html">
-					<img src="../../../Images/Absolver/News/Newfon.jpg">
-					<p>Анонс Зимнего обновления</p>
+					<a id="i" href="2024-09-28.html">
+						<img src="../../../Images/Rematch/conf.webp">
+						<p id="Top">Первые новости о новой игре от SloClap!</p>
+					</a>
+					<a id="i" href="New_Weight_System.html">
+						<img src="../../../Images/Absolver/Mods/Resolver_Icon.jpg">
+						<p>Новая система веса!</p>
+					</a>
+					<a id="i" href="New_Site.html">
+						<img src="../../../Images/Absolver/Mods/Resolver_Icon.jpg">
+						<p id="Top">Вместе с обновлением сайта, обновился и Resolver!</p>
+					</a>
+					<a id="i" href="Results_Tournament_Zruba.html">
+						<img src="../../../Images/Absolver/News/Zaruba.jpg">
+						<p>Результаты турнира Заруба!!!</p>
+					</a>
+					<a id="i" href="The_Jade_Festival_Tournament.html">
+						<img src="../../../Images/Absolver/Presskit/screen-story-5-thumb.jpg">
+						<p>Турнир Нефритового фестиваля</p>
+					</a>
+					<a id="i" href="Absolver_Mods.html">
+						<img src="../../../Images/Absolver/News/Absolver_Mods.jpg">
+						<p>Моды для Absolver!!</p>
+					</a>
+					<a id="i" href="2021-08-01.html">
+						<img src="../../../Images/Absolver/News/Newfon.jpg">
+						<p>Проблемы с серверами решены!</p>
+					</a>
+					<a id="i" href="2021-07-16.html">
+						<img src="../../../Images/Absolver/News/Newfon.jpg">
+						<p>Проблемы с серверами</p>
+					</a>
+					<a id="i" href="Absolver_Tournament_League_2021-Windfall.html">
+						<img src="../../../Images/Absolver/img464.jpg" style="object-position: 60% 50%;">
+						<p>Турнир EU - Windfall</p>
+					</a>
+					<a id="i" href="Tournament_OCE.html">
+						<img src="../../../Images/Absolver/img464.jpg" style="object-position: 60% 50%;">
+						<p>Новости по Турниру OCE</p>
+					</a>
+					<a id="i" href="2021-01-20.html">
+						<img src="../../../Images/Absolver/News/Newfon.jpg">
+						<p>Стрим Peeve 4</p>
+					</a>
+					<a id="i" href="Results_Tournament_Asia.html">
+						<img src="https://cdna.artstation.com/p/assets/images/images/012/211/952/4k/michel-donze-absolver-keyart-08.jpg">
+						<p>Результаты Турнира Asia</p>
+					</a>
+					<a id="i" href="Results_Tournaments_EU_NA.html">
+						<img src="https://cdna.artstation.com/p/assets/images/images/012/211/952/4k/michel-donze-absolver-keyart-08.jpg">
+						<p>Результаты Турнира EU & NA</p>
+					</a>
+					<a id="i" href="Tournament_Asia.html">
+						<img src="https://cdnb.artstation.com/p/assets/images/images/002/936/891/large/	victorien-berry-screenshot-fight01.jpg">
+						<p>Начало Турнира Absolver Asia</p>
+					</a>
+					<a id="i" href="Absolver_Tournaments.html">
+						<img src="../../../Images/Absolver/img464.jpg" style="object-position: 60% 50%;">
+						<p>Новости по турнирам Absolver</p>
+					</a>
+					<a id="i" href="2020-09-01.html">
+						<img src="../../../Images/Absolver/News/Newfon.jpg">
+						<p>Статистика онлайна</p>
+					</a>
+					<a id="i" href="Absolver_Tournaments_EU_NA.html">
+						<img src="https://cdna.artstation.com/p/assets/images/images/012/214/750/large/michel-donze-absolver-screenshot-05-fight.jpg">
+						<p>Турнир Absolver EU & NA</p>
+					</a>
+					<a id="i" href="Open_Letter_to_Absolver_Community.html">
+						<img src="../../../Images/Absolver/News/preview_abosoler.jpg">
+						<p id="Top">Открытое письмо сообществу Absolver</p>
+					</a>
+					<a id="i" href="2020-08-24.html">
+						<img src="../../../Images/Absolver/News/Newfon.jpg">
+						<p>Стрим Peeve 3</p>
+					</a>
+					<a id="i" href="2020-08-18.html">
+						<img src="../../../Images/Absolver/News/SRG.jpg">
+						<p>Special Reserve Games 2</p>
+					</a>
+					<a id="i" href="2020-08-16.html">
+						<img src="../../../Images/Absolver/News/Newfon.jpg">
+						<p>Стрим Peeve 2</p>
+					</a>
+					<a id="i" href="2020-08-14.html">
+						<img src="../../../Images/Absolver/News/Newfon.jpg">
+						<p>Стрим Peeve 1</p>
+					</a>
+					<a id="i" href="2020-08-01.html">
+						<img src="../../../Images/Absolver/News/SRG.jpg">
+						<p>Special Reserve Games 1</p>
+					</a>
+					<a id="i" href="2020-07-31.html">
+						<img src="../../../Images/Absolver/News/Deck2.jpg">
+						<p>Сайт с конструктором деки 2</p>
+					</a>
+					<a id="i" href="2020-07-24.html">
+						<img src="../../../Images/Absolver/News/Newfon.jpg">
+						<p>Фикс бага на Xbox</p>
+					</a>
+					<a id="i" href="2020-07-08.html">
+						<img src="../../../Images/Absolver/News/FanMap.jpg">
+						<p>Новая карта Илентии</p>
+					</a>
+					<a id="i" href="2020-04-17.html">
+						<img src="../../../Images/Absolver/News/Newfon.jpg">
+						<p>Бесплатные выходные</p>
+					</a>
+					<a id="i" href="2020-03-18.html">
+						<img src="../../../Images/Absolver/News/Deck1.jpg">
+						<p>Сайт с конструктором деки 1</p>
+					</a>
+					<a id="i" href="2020-03-14.html">
+						<img src="../../../Images/Absolver/News/Newfon.jpg">
+						<p>Пост сообщества 1</p>
+					</a>
+					<a id="i" href="2020-03-05.html">
+						<img src="../../../Images/Absolver/News/Comix.jpg">
+						<p>Комикс Absolver</p>
+					</a>
+					<a id="i" href="2019-10-02.html">
+						<img src="../../../Images/Absolver/News/Newfon.jpg">
+						<p>Тех. работы серверов</p>
+					</a>
+					<a id="i" href="2019-07-31.html">
+						<img src="../../../Images/Absolver/News/Newfon.jpg">
+						<p>Запоздавшие плохие новости</p>
+					</a>
+					<a id="i" href="2019-06-09.html">
+						<img src="../../../Images/Absolver/AbsolverWorldMap/FullMap+.jpg">
+						<p>Обновление офф. сайта</p>
+					</a>
+					<a id="i" href="2019-02-02.html">
+						<img src="../../../Images/Absolver/News/Newfon.jpg">
+						<p>Анонс Зимнего обновления</p>
+					</a>
+				</div>
+				<a id="i" href="Original" style="width: 100%; margin: 0; text-align: -webkit-center;">
+					<img style="width: auto; height: auto;" src="../../../Images/Absolver/home_about_01.png">
+					<p style="max-width: none; font-size: 24px; margin: 0;">Переводы официальных новостей</p>
 				</a>
 			</div>
-			<a id="i" href="Original">
-				<img style="width: auto; height: auto;" src="../../../Images/Absolver/home_about_01.png">
-				<p style="max-width: none; font-size: 24px; margin: 0;">Переводы официальных новостей</p>
-			</a>
-		</div>
-	</main>
-	<footer>
-		<iframe src="../footer.html"></iframe>
-	</footer>
-</body>
+		</main>
+		<footer>
+			<iframe src="../footer.html"></iframe>
+		</footer>
+	</body>
 </html>

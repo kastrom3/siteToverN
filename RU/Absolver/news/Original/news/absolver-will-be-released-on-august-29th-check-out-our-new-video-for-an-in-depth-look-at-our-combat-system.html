@@ -1,59 +1,62 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta name="theme-color" content="#ffffff" />
+		<link rel="shortcut icon" href="../../../../../Images/Absolver/favicon.png" type="image/png">
+		<title>Прошло много времени!</title>
+		<meta name="description" content="Наконец появились первые известия про грядущее Зимнее обновление!">
+		<meta name="keywords" content="ToverN, ToverN Grup, Absolver, Новости">
+		<script>
+			if (matchMedia('(prefers-color-scheme: dark)').media === 'not all') {
+				document.documentElement.style.display = 'none';
+				document.head.insertAdjacentHTML(
+					'beforeend',
+					'<link rel="stylesheet" href="../styles/light.css" onload="document.documentElement.style.display=\'\'">'
+					);
+				}
+		</script>
 
-		<link href="https://www.absolvergame.com/dist/app.css?v=0.2.12" media="all" rel="stylesheet" />
-		<style>
-			@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;800&display=swap');
-			body, .font-title, .font-text_light{
-				font-family: 'Rubik', sans-serif;
-			}
-			::-webkit-scrollbar{width: 8px; height: 8px;}
-			::-webkit-scrollbar-track{background: #666666;}
-			::-webkit-scrollbar-thumb{background: #c4c4c4;}
-			::-webkit-scrollbar-thumb:hover{background: #e6e6e6;}
-		</style>
-
-		<title></title>
+		<link rel="stylesheet" href="../../../../../SmartPhoto/css/smartphoto.min.css">
+		<link rel="stylesheet" href="../../../styles/light.css" media="(prefers-color-scheme: light)">
+		<link rel="stylesheet" href="../../../styles/dark.css" media="(prefers-color-scheme: dark)">
+		<link rel="stylesheet" href="../../../styles/index.css">
+		<link rel="stylesheet" href="../News.css">
 	</head>
-  <body id="main" class="js-body news">
-  <article class="news-article news-single">
-        <header>
-      <img class="news-article__thumbnail c-1block-news__image" src="https://absolvergame.com/media/cy41m6a7zhcrwr/source/Kata_Forsaken_020126.png" />
-    </header>
-        <div class="listing-wrapper">
-      <div class="news-article__title-link" href="absolver-will-be-released-on-august-29th-check-out-our-new-video-for-an-in-depth-look-at-our-combat-system.html">
-        <h1 class="news-article__title font-title">Absolver will be released on August 29th! Check out our new video for an in-depth look at our Combat System</h1>
-      </div>
-
-      <span class="news-article__date font-title">May 10, 2017</span>
-      <div class="news-article__body"><h1>We’ve got some news!</h1>
-
-<p>Hello Prospects,</p>
-
-<p>We are happy to share with you our new Gameplay video for Absolver, where you will learn more about our 3 initial Combat Styles and their Special Ability. The trailer also outlines the main features of the Combat Deck.<br>
-Find your Combat Style when Absolver launches on August 29th on Playstation 4 and PC!<br>
-If it’s not already done, feel free to jump into our Beta Registration form, to get our latest Closed Beta-related news.</p>
-
-<p>See you soon in the plains of Adal,</p>
-
-<p><em>The Sloclap team</em></p>
-
-<img src="https://s.w.org/images/core/emoji/2.2.1/svg/1f44f.svg" style="width:20px; height:20px;"><img src="https://s.w.org/images/core/emoji/2.2.1/svg/1f44f.svg" style="width:20px; height:20px;"><img src="https://s.w.org/images/core/emoji/2.2.1/svg/1f44f.svg" style="width:20px; height:20px;">
-
-
-<p><iframe width="800" height="315" src="https://www.youtube.com/embed/fmqfIbR7Q4Y" frameborder="0" allowfullscreen></iframe></p></div>       
-    </div>
-  </article>
-  
-    <div class="news-single__back-link">
-      <div class="listing-wrapper">
-        <a href="../news.html" class="news-single__back-link-inner font-title">
-          <svg class="icon"><use xlink:href="../dist/sprite.symbols.svg#icon_arrow_double" /></svg>
-          Все новости Абзолвера
-        </a>
-      </div>
-    </div>
-  </body>
+	<body>
+		<header>
+			<a href="../"><img src="../../../../../Images/Absolver/UI/arrow_right.png" style="transform: rotateY(180deg);"></a>
+			<fieldset class="switcher">
+				<input class="switcher__radio switcher__radio--light" type="radio" name="color-scheme" value="light" aria-label="Светлая">
+				<input class="switcher__radio switcher__radio--auto" type="radio" name="color-scheme" value="auto" aria-label="Системная" checked>
+				<input class="switcher__radio switcher__radio--dark" type="radio" name="color-scheme" value="dark" aria-label="Тёмная">
+				<div class="switcher__status"></div>
+			</fieldset>
+			<script src="../../../index.js"></script>
+		</header>
+		<main>
+			<div id="fon" style="background-image: url(https://absolvergame.com/media/cy41m6a7zhcrwr/source/Kata_Forsaken_020126.png); background-attachment: local;">
+			</div>
+			<div id="C">
+				<div class="news-article__title-link" href="absolver-will-be-released-on-august-29th-check-out-our-new-video-for-an-in-depth-look-at-our-combat-system.html">
+					<h1 class="news-article__title font-title">Absolver выйдет 29 августа! Посмотрите наше новое видео, чтобы более подробно познакомиться с нашей боевой системой.</h1>
+				</div>
+				<time datetime="2017-05-10">10 Мая 2017</time>
+				<h3>У нас есть новости!</h3>
+				<p>Здравствуйте претенденты,</p>
+				<p>
+					Мы рады поделиться с вами нашим новым видео геймплея Absolver, в котором вы узнаете больше о наших трех начальных боевых стилях и их особых способностях. В трейлере также излагаются основные особенности Боевой деки.<br>
+					Найдите свой боевой стиль, когда Absolver выйдет 29 августа на PlayStation 4 и ПК!<br>
+					Если она ещё не вышла, смело заполняйте форму регистрации на бета-тестирование, чтобы получать последние новости, связанные с закрытым бета-тестированием.
+				</p>
+				<p>До скорой встречи на равнинах Адала,</p>
+				<em>Команда SloClap</em>
+				<p>👏👏👏</p>
+				<div id="video">
+					<iframe src="https://www.youtube.com/embed/fmqfIbR7Q4Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+				</div> 
+			</div>
+		</main>
+		<footer>
+			<iframe src="../../../footer.html"></iframe>
+		</footer>
+	</body>
 </html>

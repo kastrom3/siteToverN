@@ -85,14 +85,3 @@ function clearScheme() {
 
 setupSwitcher();
 setupScheme();
-
-
-// Когда открывается div с классом "block"
-document.querySelector('.block-open').addEventListener('click', function() {
-    document.body.classList.add('disable-scroll');
-});
-
-// Когда div с классом "block" закрывается (например, по нажатию на кнопку закрытия)
-document.querySelector('.block-close').addEventListener('click', function() {
-    document.body.classList.remove('disable-scroll');
-});
