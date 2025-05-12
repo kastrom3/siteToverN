@@ -567,16 +567,38 @@ itemtable *:not(.I){
 }
 
 .force-dark-theme {
-	--image: url(../../../Images/Absolver/UI/background_brown.jpg);
-	--sprt: url(../../../Images/Absolver/UI/listing_separator.png);
-	--color:#f5f9cc;
-	--color2:#dbdccb;
-	--ico: url(../../../Images/Absolver/UI/list-style-D.png);
-	--Color: #444;
-	--Color2: #000;
-	--p: #ddd;
-	--h2: #fff;
-	--smartphoto: #36302e;
-	--code: #444;
-	--author: #0ff;
+	--image: url(../../../Images/Absolver/UI/background_brown.jpg) !important;
+	--sprt: url(../../../Images/Absolver/UI/listing_separator.png) !important;
+	--color:#f5f9cc !important;
+	--color2:#dbdccb !important;
+	--ico: url(../../../Images/Absolver/UI/list-style-D.png) !important;
+	--Color: #444 !important;
+	--Color2: #000 !important;
+	--p: #ddd !important;
+	--h2: #fff !important;
+	--smartphoto: #36302e !important;
+	--code: #444 !important;
+	--author: #0ff !important;
+	color: var(--color);
+
+	blockquote{
+		background: var(--smartphoto);
+	}
+
+	xmp{
+		color: var(--color);
+		background-color: var(--code);
+	}
+
+	ul{
+		list-style-image: var(--ico);
+	}
+
+	hr{
+		background-image: var(--sprt);
+	}
+
+	#author, #author a{
+		color: var(--author)
+	}
 }
