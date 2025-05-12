@@ -45,11 +45,13 @@ h3{
 	font-weight: 800;
 	font-size: 45px;
 	margin-block-start: 0;
-	margin-block-end: -0.3em;
+	margin-block-end: 0;
 }
 
 h4{
-	margin-block-end: -0.72em;
+	font-size: 27px;
+	margin-block-start: 0;
+	margin-block-end: 0;
 }
 
 a{
@@ -334,9 +336,9 @@ cite, cite a{/* Ссылка на Оригинал */
 
 .block iframe{
     position: relative;
-	padding: 10px;
-	width: calc(80% - 20px);
-	height: calc(90% - 20px);
+	padding: 20px;
+	width: calc(80% - 40px);
+	height: calc(90% - 40px);
 	left: 10%;
 	top: 3%;
 }
@@ -346,9 +348,9 @@ cite, cite a{/* Ссылка на Оригинал */
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	max-width: calc(80% - 20px);
+	max-width: calc(80% - 40px);
 	width: max-content;
-	max-height: calc(90% - 20px);
+	max-height: calc(90% - 40px);
 	height: auto;
 	overflow: auto;
 	color-scheme: dark;
@@ -386,7 +388,7 @@ cite, cite a{/* Ссылка на Оригинал */
 	height: 90%;
 	left: 10%;
 	top: 3%;
-	background-color: #000c;
+	background-color: #000d;
 	-webkit-mask-box-image: url(../../../Images/Absolver/Stencils/UI_box.png) 65;
 }
 
@@ -562,4 +564,19 @@ itemtable *:not(.I){
 ::selection {
     background-color: #f5f9cc96;
     color: #ff8c00;
+}
+
+.force-dark-theme {
+	--image: url(../../../Images/Absolver/UI/background_brown.jpg);
+	--sprt: url(../../../Images/Absolver/UI/listing_separator.png);
+	--color:#f5f9cc;
+	--color2:#dbdccb;
+	--ico: url(../../../Images/Absolver/UI/list-style-D.png);
+	--Color: #444;
+	--Color2: #000;
+	--p: #ddd;
+	--h2: #fff;
+	--smartphoto: #36302e;
+	--code: #444;
+	--author: #0ff;
 }
