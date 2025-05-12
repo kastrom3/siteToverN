@@ -48,6 +48,12 @@ function switchMedia(scheme) {
 	let lightMedia;
 	let darkMedia;
 
+	// Для элементов с классом force-dark-theme всегда используем тёмную тему
+	const forceDark = document.querySelectorAll('.force-dark-theme');
+	if (forceDark.length > 0) {
+		scheme = 'dark';
+	}
+
 	if (scheme === 'auto') {
 		lightMedia = '(prefers-color-scheme: light)';
 		darkMedia = '(prefers-color-scheme: dark)';
